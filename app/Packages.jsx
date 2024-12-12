@@ -115,7 +115,7 @@ const Packages = () => {
                     Hajj{" "}
                     <span className="text-xl font-normal text-black">2025</span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold">
+                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     The Reward For An Accepted Hajj is Paradise
                   </p>
                   <button className="mt-1">Enquire Now</button>
@@ -130,7 +130,7 @@ const Packages = () => {
                     Umrah{" "}
                     <span className="text-xl font-normal text-black">2025</span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold">
+                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Umrah Trips Planned As Per Your Needs
                   </p>
                   <button className="mt-1">Enquire Now</button>
@@ -145,7 +145,7 @@ const Packages = () => {
                     Ramadan{" "}
                     <span className="text-xl font-normal text-black">2025</span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold">
+                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Curating The Best For Ramadan Umrah
                   </p>
                   <button className="mt-1">Enquire Now</button>
@@ -160,7 +160,7 @@ const Packages = () => {
                     Ziyarat{" "}
                     <span className="text-xl font-normal text-black">2025</span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold">
+                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Offer Salutations And Greetings To Muhammad{" "}
                     <span className="text-[#B78738] font-bold text-xl">ﷺ</span>
                   </p>
