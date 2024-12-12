@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+}
+
+.hero-bg {
+  background-image: url("/slider-banner-3.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Charm";
+  src: url("/font/Charm-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold weight font (700) */
+@font-face {
+  font-family: "Charm";
+  src: url("/font/Charm-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
