@@ -12,18 +12,18 @@ const Hero = () => {
   });
 
   return (
-    <main className="w-full  mt-16  h-[80vh] flex justify-center  text-white/95 ">
+    <main className="w-full  mt-16  h-[90vh] md:h-[80vh] flex justify-center  text-white/95 ">
       <div className="flex justify-center w-[97%] md:w-[98%] bg-black rounded-b-lg ">
         <Splide
           options={{
             perPage: 1,
-            height: 600,
+            height: 800,
           }}
-          className="block w-full h-full"
+          className="block w-full h-full overflow-hidden rounded-b-lg"
         >
           <SplideSlide className="h-[100%]">
-            <div className="flex !h-full bg-black overflow-hidden rounded-b-lg hero-bg ">
-              <div className="text-center flex flex-col items-center justify-start mt-4 md:mt-12   w-full px-4 py-6 text-[#B78738] flec-col ">
+            <div className="flex !h-full bg-black rounded-b-lg hero-bg ">
+              <div className="text-center flex flex-col items-center justify-start mt-4 md:mt-12  w-full px-4 py-6 text-[#B78738] flec-col ">
                 <p className="text-[38px] sm:text-[45px] md:text-[50px] font-bold font-charm">
                   Transform Your Life
                 </p>
