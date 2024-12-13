@@ -23,7 +23,7 @@ const Hero = () => {
         >
           <SplideSlide className="h-[100%]">
             <div className="flex !h-full bg-black overflow-hidden rounded-b-lg hero-bg ">
-              <div className="text-center flex flex-col items-center justify-start mt-12 md:mt-24  w-full px-4 py-6 text-[#B78738] flec-col ">
+              <div className="text-center flex flex-col items-center justify-start mt-4 md:mt-12   w-full px-4 py-6 text-[#B78738] flec-col ">
                 <p className="text-[38px] sm:text-[45px] md:text-[50px] font-bold font-charm">
                   Transform Your Life
                 </p>
