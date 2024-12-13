@@ -13,8 +13,9 @@
 
 .hero-bg {
   background-image: url("/slider-banner-3.jpg");
-  background-size: auto;
+  background-size: 1000px;
   background-position: center;
+
   background-repeat: no-repeat;
   height: 100%;
 }
