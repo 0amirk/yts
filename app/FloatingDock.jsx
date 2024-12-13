@@ -9,52 +9,41 @@ import {
   IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { Facebook, Instagram, Mail, Phone, Youtube } from "lucide-react";
 
 export default function FloatingDockDemo() {
   const links = [
     {
       title: "Home",
-      icon: (
-        <IconHome className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconHome className="w-full h-full text-white/95" />,
       href: "#",
     },
 
     {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      title: "Facebook",
+      icon: <Facebook className="w-full h-full text-white/95" />,
+      href: "https://www.facebook.com/Yourtravelshopcom/",
     },
     {
       title: "Components",
-      icon: (
-        <IconNewSection className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <Youtube className="w-full h-full text-white/95" />,
+      href: "https://www.youtube.com/channel/UC_1TAfW_CNhbkr5VCA1ypsQ",
     },
     {
       title: "Changelog",
-      icon: (
-        <IconExchange className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <Instagram className="w-full h-full text-white/95" />,
+      href: "https://www.instagram.com/accounts/login/?next=/yourtravelshop/",
     },
 
     {
       title: "Twitter",
-      icon: (
-        <IconBrandX className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <Phone className="w-full h-full text-white/95" />,
+      href: "tel:02085547070",
     },
     {
       title: "GitHub",
-      icon: (
-        <IconBrandGithub className="w-full h-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      icon: <Mail className="w-full h-full text-white/95" />,
+      href: "mailto:hello@yourtravelshop.com",
     },
   ];
   return (

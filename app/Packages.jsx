@@ -1,6 +1,7 @@
 "use client";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { MoveRight } from "lucide-react";
 
 const Packages = () => {
   return (
@@ -20,7 +21,7 @@ const Packages = () => {
             relaxed state of mind during the sacred journey.
           </p>
         </div>
-        {/* DESKTOP SLIDER */}
+        {/* DESKTOP */}
         <div className="hidden px-6 mt-4 mb-8 text-black md:mb-10 cursor-grab active:cursor-grabbing md:block">
           <Splide
             options={{
@@ -43,7 +44,12 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     The Reward For An Accepted Hajj is Paradise
                   </p>
-                  <button className="mt-1 text-lg">Enquire Now</button>
+                  <button className="mt-1 text-lg group">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p>{" "}
+                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -58,7 +64,12 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Umrah Trips That Are Planned As Per Your Needs
                   </p>
-                  <button className="mt-1 text-lg">Enquire Now</button>
+                  <button className="mt-1 text-lg group">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p>{" "}
+                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -73,7 +84,12 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Curating The Best For Your Ramadan Umrah
                   </p>
-                  <button className="mt-1 text-lg">Enquire Now</button>
+                  <button className="mt-1 text-lg group">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p>{" "}
+                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -89,13 +105,18 @@ const Packages = () => {
                     Offer Salutations And Greetings To Muhammad{" "}
                     <span className="text-[#B78738] font-bold">ﷺ</span>
                   </p>
-                  <button className="mt-1 text-lg">Enquire Now</button>
+                  <button className="mt-1 text-lg group">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p>{" "}
+                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
           </Splide>
         </div>
-        {/* MOBILE SLIDER */}
+        {/* MOBILE */}
         <div className="px-6 mt-4 mb-8 text-black md:hidden md:mb-10 cursor-grab active:cursor-grabbing">
           <Splide
             options={{
@@ -118,7 +139,11 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     The Reward For An Accepted Hajj is Paradise
                   </p>
-                  <button className="mt-1">Enquire Now</button>
+                  <button className="mt-1">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p> <MoveRight className="mt-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -133,7 +158,11 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Umrah Trips Planned As Per Your Needs
                   </p>
-                  <button className="mt-1">Enquire Now</button>
+                  <button className="mt-1">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p> <MoveRight className="mt-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -148,7 +177,11 @@ const Packages = () => {
                   <p className="mt-3 text-lg font-semibold max-w-[300px]">
                     Curating The Best For Ramadan Umrah
                   </p>
-                  <button className="mt-1">Enquire Now</button>
+                  <button className="mt-1">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p> <MoveRight className="mt-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
@@ -164,7 +197,11 @@ const Packages = () => {
                     Offer Salutations And Greetings To Muhammad{" "}
                     <span className="text-[#B78738] font-bold text-xl">ﷺ</span>
                   </p>
-                  <button className="mt-1">Enquire Now</button>
+                  <button className="mt-1">
+                    <div className="flex items-center gap-[6px]">
+                      <p>Enquire Now</p> <MoveRight className="mt-1" />
+                    </div>
+                  </button>
                 </div>
               </div>
             </SplideSlide>
