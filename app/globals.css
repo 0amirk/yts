@@ -19,6 +19,14 @@
   height: 100%;
 }
 
+.hero-bg-2 {
+  background-image: url("/hero-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 @font-face {
   font-family: "Charm";
   src: url("/font/Charm-Regular.ttf") format("truetype");

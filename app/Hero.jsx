@@ -18,6 +18,8 @@ const Hero = () => {
           options={{
             perPage: 1,
             height: 800,
+            autoplay: false,
+            pagination: false,
           }}
           className="block w-full h-full overflow-hidden rounded-b-lg"
         >
@@ -43,6 +45,22 @@ const Hero = () => {
                 </div>
                 <button className="border-[#B78738] text-[#B78738] border hover:text-black hover:bg-[#B78738] hover:opacity-95 rounded-lg font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-105 px-5 py-1 mt-6">
                   Book Now
+                </button>
+              </div>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="hero-bg-2">
+              <div className="h-full px-4 py-6">
+                <p className="mt-4 font-semibold md:mt-12 text-white/85 text-[38px] sm:text-[45px] md:text-[50px] font-charm">
+                  Ramadan Umrah 2025
+                </p>
+                <div className="flex items-center gap-2">
+                  <img src="/plane.png" className="w-8 h-8" />
+                  <p className="text-xl font-semibold">4th March</p>
+                </div>
+                <button className="border-[#B78738] border hover:opacity-95 rounded-lg font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-105 px-5 py-1 mt-6">
+                  More Details
                 </button>
               </div>
             </div>
