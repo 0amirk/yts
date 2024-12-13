@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 const Packages = () => {
   return (
-    <main className="flex justify-center w-full mb-12 text-white/95">
+    <main className="flex justify-center w-full mb-6 text-white/95">
       <div className="flex flex-col bg-white w-[97%] shadow-lg backdrop-blur-md md:w-[98%] rounded-b-lg ">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] flec-col ">
           <p className="text-[25px] md:!text-[35px] text-[#B78738] font-charm md:text-lg">
@@ -35,7 +35,12 @@ const Packages = () => {
           >
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/hajj-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/hajj-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Hajj{" "}
@@ -55,7 +60,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/umrah-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/umrah-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Umrah{" "}
@@ -75,7 +85,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/ramadan-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/ramadan-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Ramadan{" "}
@@ -95,7 +110,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/ziyarat.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/ziyarat.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Ziyarat{" "}
@@ -130,7 +150,12 @@ const Packages = () => {
           >
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/hajj-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/hajj-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Hajj{" "}
@@ -149,7 +174,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/umrah-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/umrah-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Umrah{" "}
@@ -168,7 +198,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/ramadan-updated.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/ramadan-updated.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Ramadan{" "}
@@ -187,7 +222,12 @@ const Packages = () => {
             </SplideSlide>
             <SplideSlide>
               <div className="flex flex-col items-start justify-center h-full">
-                <img src="/ziyarat.jpg" className="rounded-lg" />
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src="/ziyarat.jpg"
+                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
+                  />
+                </div>
                 <div className="mt-2 ml-4">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     Ziyarat{" "}
