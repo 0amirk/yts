@@ -1,6 +1,7 @@
 "use client";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import FloatingDockDemo from "./FloatingDock";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
@@ -12,7 +13,8 @@ const Hero = () => {
   });
 
   return (
-    <main className="w-full  mt-16  h-[90vh] md:h-[80vh] flex justify-center  text-white/95 ">
+    <main className="w-full relative z-10 mt-16  h-[90vh] md:h-[80vh] flex justify-center  text-white/95 ">
+      <FloatingDockDemo />
       <div className="flex justify-center w-[97%] md:w-[98%] bg-black rounded-b-lg ">
         <Splide
           options={{
