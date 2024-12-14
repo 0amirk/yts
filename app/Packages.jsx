@@ -2,11 +2,34 @@
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Packages = () => {
+  useEffect(() => {
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    fadeIns.forEach((fadeIn) => observer.observe(fadeIn));
+
+    // Cleanup the observer on component unmount
+    return () => observer.disconnect();
+  }, []);
   return (
     <main className="flex justify-center w-full mb-6 text-white/95">
-      <div className="flex flex-col bg-white w-[97%] shadow-lg backdrop-blur-md md:w-[98%] rounded-b-lg ">
+      <div className="flex flex-col bg-white shadow-lg backdrop-blur-md w-[100%] rounded-b-lg ">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] flec-col ">
           <p className="text-[25px] md:!text-[35px] text-[#B78738] font-charm md:text-lg">
             Explore options to visit the house of ﷻ ﷲ
@@ -22,119 +45,121 @@ const Packages = () => {
           </p>
         </div>
         {/* DESKTOP */}
-        <div className="hidden px-6 mt-4 mb-8 text-black md:mb-10 cursor-grab active:cursor-grabbing md:block">
-          <Splide
-            options={{
-              type: "slide",
-              drag: "snap",
-              perPage: 3,
-              gap: 30,
-              drag: true,
-              pagination: false,
-            }}
-          >
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/hajj-updated.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Hajj{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    The Reward For An Accepted Hajj is Paradise
-                  </p>
-                  <button className="mt-1 text-lg group">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p>{" "}
-                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
-                    </div>
-                  </button>
-                </div>
+        <div className="hidden px-6 mt-4 mb-8 text-black md:mb-10 md:block">
+          <div className="flex flex-wrap items-center justify-around gap-2">
+            {/* First Div */}
+            <div className="flex flex-col items-start justify-center h-full fade-in">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="/hajj-updated.jpg"
+                  loading="lazy"
+                  className="rounded-lg h-[200px] w-[320px]"
+                />
               </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/umrah-updated.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Umrah{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Umrah Trips That Are Planned As Per Your Needs
-                  </p>
-                  <button className="mt-1 text-lg group">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p>{" "}
-                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
-                    </div>
-                  </button>
-                </div>
+              <div className="mt-2">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+                  Hajj{" "}
+                  <span className="text-xl font-normal text-black">2025</span>
+                </p>
+                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                  The Reward For An Accepted Hajj is Paradise
+                </p>
+                <button className="mt-1 text-lg group">
+                  <div className="flex items-center gap-[6px]">
+                    <p>Enquire Now</p>{" "}
+                    <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                  </div>
+                </button>
               </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/ramadan-updated.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Ramadan{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Curating The Best For Your Ramadan Umrah
-                  </p>
-                  <button className="mt-1 text-lg group">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p>{" "}
-                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
-                    </div>
-                  </button>
-                </div>
+            </div>
+
+            {/* Second Div */}
+            <div
+              className="flex flex-col items-start justify-center h-full fade-in"
+              style={{ transitionDelay: ` 0.2s` }}
+            >
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="/umrah-updated.jpg"
+                  loading="lazy"
+                  className="rounded-lg h-[200px] w-[320px]"
+                />
               </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/ziyarat.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Ziyarat{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Offer Salutations And Greetings To Muhammad{" "}
-                    <span className="text-[#B78738] font-bold">ﷺ</span>
-                  </p>
-                  <button className="mt-1 text-lg group">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p>{" "}
-                      <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
-                    </div>
-                  </button>
-                </div>
+              <div className="mt-2">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+                  Umrah{" "}
+                  <span className="text-xl font-normal text-black">2025</span>
+                </p>
+                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                  Umrah Trips That Are Planned As Per Your Needs
+                </p>
+                <button className="mt-1 text-lg group">
+                  <div className="flex items-center gap-[6px]">
+                    <p>Enquire Now</p>{" "}
+                    <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                  </div>
+                </button>
               </div>
-            </SplideSlide>
-          </Splide>
+            </div>
+            {/* third div */}
+            <div
+              className="flex flex-col items-start justify-center h-full fade-in"
+              style={{ transitionDelay: ` 0.4s` }}
+            >
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="/ramadan-updated.jpg"
+                  loading="lazy"
+                  className="rounded-lg h-[200px] w-[320px]"
+                />
+              </div>
+              <div className="mt-2">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+                  Ramadan{" "}
+                  <span className="text-xl font-normal text-black">2025</span>
+                </p>
+                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                  Curating The Best For Ramadan Umrah
+                </p>
+                <button className="mt-1">
+                  <div className="flex items-center gap-[6px] group">
+                    <p>Enquire Now</p>{" "}
+                    <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                  </div>
+                </button>
+              </div>
+            </div>
+            {/* fourth div */}
+
+            <div
+              className="flex flex-col items-start justify-center h-full fade-in"
+              style={{ transitionDelay: ` 0.6s` }}
+            >
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src="/ziyarat.jpg"
+                  loading="lazy"
+                  className="rounded-lg h-[200px] w-[320px]"
+                />
+              </div>
+              <div className="mt-2">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+                  Ziyarat{" "}
+                  <span className="text-xl font-normal text-black">2025</span>
+                </p>
+                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                  Offer Salutations And Greetings To Muhammad{" "}
+                  <span className="text-[#B78738] font-bold">ﷺ</span>
+                </p>
+                <button className="mt-1 text-lg group">
+                  <div className="flex items-center gap-[6px]">
+                    <p>Enquire Now</p>{" "}
+                    <MoveRight className="mt-1 duration-100 group-hover:translate-x-1" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         {/* MOBILE */}
         <div className="px-6 mt-4 mb-8 text-black md:hidden md:mb-10 cursor-grab active:cursor-grabbing">

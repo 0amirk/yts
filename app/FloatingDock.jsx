@@ -16,33 +16,39 @@ export default function FloatingDockDemo() {
     {
       title: "Home",
       icon: <IconHome className="w-full h-full text-white/95" />,
+      target: "",
       href: "#",
     },
 
     {
       title: "Facebook",
       icon: <Facebook className="w-full h-full text-white/95" />,
+      target: "_blank",
       href: "https://www.facebook.com/Yourtravelshopcom/",
     },
     {
-      title: "Components",
+      title: "YT",
       icon: <Youtube className="w-full h-full text-white/95" />,
+      target: "_blank",
       href: "https://www.youtube.com/channel/UC_1TAfW_CNhbkr5VCA1ypsQ",
     },
     {
-      title: "Changelog",
+      title: "Instagram",
       icon: <Instagram className="w-full h-full text-white/95" />,
+      target: "_blank",
       href: "https://www.instagram.com/accounts/login/?next=/yourtravelshop/",
     },
 
     {
-      title: "Twitter",
+      title: "Phone",
       icon: <Phone className="w-full h-full text-white/95" />,
+      target: "_blank",
       href: "tel:02085547070",
     },
     {
-      title: "GitHub",
+      title: "Mail",
       icon: <Mail className="w-full h-full text-white/95" />,
+      target: "_blank",
       href: "mailto:hello@yourtravelshop.com",
     },
   ];

@@ -49,6 +49,8 @@ const FloatingDockMobile = ({ items, className }) => {
                 >
                   <Link
                     href={item.href}
+                    onClick={() => setOpen(!open)}
+                    target={item.target}
                     className="relative z-50 flex items-center justify-center w-10 h-10 rounded-full md:w-12 md:h-12 bg-gray-50 dark:bg-neutral-900"
                   >
                     <div className="w-4 h-4 md:w-6 md:h-6">{item.icon}</div>

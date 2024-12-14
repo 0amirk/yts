@@ -11,6 +11,10 @@
   scrollbar-width: none; /* For Firefox */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hero-bg {
   background-image: url("/hero.jpg");
   background-size: cover;
@@ -40,4 +44,15 @@
   src: url("/font/Charm-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+.fade-in {
+  opacity: 0; /* Hidden initially */
+  transform: translateY(50px); /* Starts slightly below its final position */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
+}
+
+.fade-in.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moves to its original position */
 }
