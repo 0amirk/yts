@@ -57,6 +57,19 @@ html {
   transform: translateY(0); /* Moves to its original position */
 }
 
+@keyframes opacity-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-opacity-in {
+  animation: opacity-in 0.5s ease-in-out;
+}
+
 .feature-box {
   position: relative;
   padding: 7px;
@@ -152,4 +165,20 @@ html {
   width: 25px;
   border-top-left-radius: 0.6rem;
   box-shadow: 0 -25px 0 0 white;
+}
+
+@keyframes play {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 115%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+.animate-play {
+  animation: play 2.5s ease-in-out 1s infinite;
 }

@@ -31,7 +31,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="transition-colors text-white/90 hover:text-white"
+                  className="transition-colors text-white/80 hover:text-white"
                 >
                   {item.label}
                 </Link>
