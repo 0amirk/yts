@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="flex justify-center w-[100%] bg-black rounded-b-lg ">
         <div className="flex w-full h-full overflow-hidden bg-black rounded-b-lg hero-bg ">
           <div className="flex flex-col md:items-end  justify-end items-center w-full  text-[#B78738]">
-            <div className="px-4 py-6 sm:px-12 flex justify-center flex-col md:px-16 rounded-t-lg text-start bg-black/65  md:h-[70%] w-full md:w-[50%] ">
+            <div className="px-4 py-6 sm:px-12 flex justify-center flex-col md:px-16 rounded-tl-lg text-start bg-black/65  md:h-[70%] w-full md:w-[50%] ">
               <p className="text-[38px] sm:text-[45px] md:text-[50px] font-bold font-charm">
                 Transform Your Life
               </p>

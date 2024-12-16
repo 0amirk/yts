@@ -16,7 +16,7 @@ const FloatingDockMobile = ({ items, className }) => {
       <div className="relative">
         <button
           onClick={() => setOpen(!open)}
-          className="flex items-center justify-center w-10 h-10 rounded-full md:w-12 md:h-12 bg-gray-50 dark:bg-neutral-800"
+          className="flex items-center justify-center w-10 h-10 rounded-full bg-black/95 md:w-12 md:h-12"
         >
           <IconLayoutNavbarCollapse className="w-5 h-5 rotate-[-90deg] md:w-8 md:h-8 text-white/95" />
         </button>
@@ -51,7 +51,7 @@ const FloatingDockMobile = ({ items, className }) => {
                     href={item.href}
                     onClick={() => setOpen(!open)}
                     target={item.target}
-                    className="relative z-50 flex items-center justify-center w-10 h-10 rounded-full md:w-12 md:h-12 bg-gray-50 dark:bg-neutral-900"
+                    className="relative z-50 flex items-center justify-center w-10 h-10 rounded-full md:w-12 md:h-12 bg-black/80"
                   >
                     <div className="w-4 h-4 md:w-6 md:h-6">{item.icon}</div>
                   </Link>

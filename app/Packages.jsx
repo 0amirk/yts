@@ -44,7 +44,6 @@ const Packages = () => {
             relaxed state of mind during the sacred journey.
           </p>
         </div>
-        {/* DESKTOP */}
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
           <div className="flex flex-col items-center justify-around gap-x-4 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
             {/* First Div */}
@@ -56,7 +55,7 @@ const Packages = () => {
                   className="md:h-[200px] md:w-[320px]"
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 ml-2">
                 <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Hajj{" "}
                   <span className="text-xl font-normal text-black">2025</span>
@@ -85,7 +84,7 @@ const Packages = () => {
                   className="md:h-[200px] md:w-[320px]"
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 ml-2">
                 <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Umrah{" "}
                   <span className="text-xl font-normal text-black">2025</span>
@@ -113,7 +112,7 @@ const Packages = () => {
                   className="md:h-[200px] md:w-[320px]"
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 ml-2">
                 <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Ramadan{" "}
                   <span className="text-xl font-normal text-black">2025</span>
@@ -142,7 +141,7 @@ const Packages = () => {
                   className="md:h-[200px] md:w-[320px]"
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 ml-2">
                 <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Ziyarat{" "}
                   <span className="text-xl font-normal text-black">2025</span>
@@ -160,115 +159,6 @@ const Packages = () => {
               </div>
             </div>
           </div>
-        </div>
-        {/* MOBILE */}
-        <div className="px-6 mt-4 mb-8 text-black md:hidden md:mb-10 cursor-grab active:cursor-grabbing">
-          {/* <Splide
-            options={{
-              type: "slide",
-              drag: "snap",
-              perPage: 1,
-              gap: 30,
-              drag: true,
-              pagination: true,
-              arrows: false,
-            }}
-          >
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img src="/hajj-updated.jpg" className="rounded-lg " />
-                </div>
-                <div className="mt-2">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm mt-[-40px] bg-white w-[120px] rounded-tr-lg pt-[2px]">
-                    Hajj{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    The Reward For An Accepted Hajj is Paradise
-                  </p>
-                  <button className="mt-1">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p> <MoveRight className="mt-1" />
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/umrah-updated.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Umrah{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Umrah Trips Planned As Per Your Needs
-                  </p>
-                  <button className="mt-1">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p> <MoveRight className="mt-1" />
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/ramadan-updated.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Ramadan{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Curating The Best For Ramadan Umrah
-                  </p>
-                  <button className="mt-1">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p> <MoveRight className="mt-1" />
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="flex flex-col items-start justify-center h-full">
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src="/ziyarat.jpg"
-                    className="transition-transform duration-300 ease-in-out rounded-lg hover:scale-110"
-                  />
-                </div>
-                <div className="mt-2 ml-4">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    Ziyarat{" "}
-                    <span className="text-xl font-normal text-black">2025</span>
-                  </p>
-                  <p className="mt-3 text-lg font-semibold max-w-[300px]">
-                    Offer Salutations And Greetings To Muhammad{" "}
-                    <span className="text-[#B78738] font-bold text-xl">ﷺ</span>
-                  </p>
-                  <button className="mt-1">
-                    <div className="flex items-center gap-[6px]">
-                      <p>Enquire Now</p> <MoveRight className="mt-1" />
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </SplideSlide>
-          </Splide> */}
         </div>
       </div>
     </main>

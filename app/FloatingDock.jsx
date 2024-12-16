@@ -1,21 +1,12 @@
 import React from "react";
 import { FloatingDock } from "./components/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
-import Image from "next/image";
-import { Facebook, Instagram, Mail, Phone, Youtube } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone, Youtube, House } from "lucide-react";
 
 export default function FloatingDockDemo() {
   const links = [
     {
       title: "Home",
-      icon: <IconHome className="w-full h-full text-white/95" />,
+      icon: <House className="w-full h-full text-white/95" />,
       target: "",
       href: "#",
     },

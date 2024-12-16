@@ -4,9 +4,9 @@ import { PhoneOutgoing } from "lucide-react";
 
 const Journey = () => {
   return (
-    <main className="flex justify-center w-full mb-6 text-white/95">
-      <div className="flex flex-col w-[97%] shadow-lg backdrop-blur-md md:w-[98%] rounded-lg ">
-        <div className="text-center flex flex-col-reverse lg:flex-row items-center justify-center gap-12 mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] flec-col ">
+    <main className="flex justify-center w-full">
+      <div className="flex flex-col w-[100%] ">
+        <div className="text-center flex flex-col-reverse lg:flex-row-reverse items-center justify-center gap-12 mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738]">
           <div>
             <p className="text-[25px] md:text-[35px] font-semibold text-[#B78738] font-charm">
               Plan Your Spiritual Journey With Us
