@@ -56,3 +56,42 @@ html {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Moves to its original position */
 }
+
+.hover-border-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-border-effect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent; /* Initial transparent border */
+  z-index: 1;
+  animation: border-fill 1s ease forwards;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 1s ease;
+}
+
+.hover-border-effect:hover::before {
+  opacity: 1; /* Visible on hover */
+  border: 2px solid red;
+}
+
+@keyframes border-fill {
+  0% {
+    border-width: 2px 0 0 2px; /* Top-left starts */
+  }
+  25% {
+    border-width: 2px 2px 0 2px; /* Top and left fill in */
+  }
+  50% {
+    border-width: 2px 2px 2px 2px; /* All sides visible */
+  }
+  75% {
+    border-width: 2px 2px 2px 2px; /* Smooth continuation */
+  }
+  100% {
+    border-width: 2px 2px 2px 2px; /* Complete border animation */
+  }
+}
