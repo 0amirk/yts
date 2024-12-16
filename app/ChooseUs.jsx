@@ -1,12 +1,35 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "./components/dialog";
 import { Play } from "lucide-react";
 const ChooseUs = () => {
   const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => setIsOpen(false);
+
+  useEffect(() => {
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    fadeIns.forEach((fadeIn) => observer.observe(fadeIn));
+
+    // Cleanup the observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <main className="flex justify-around rounded-b-lg items-center flex-col-reverse md:flex-row  md:gap-12 w-full mb-6 bg-[#ca9745] px-4 py-6">
+    <main className="flex justify-around items-center flex-col-reverse md:flex-row  md:gap-12 w-full mb-6 bg-[#ca9745] px-4 py-6">
       <div className="rounded-lg fade-in">
         <div
           className="relative flex items-center justify-center mt-6 mb-6 cursor-pointer"

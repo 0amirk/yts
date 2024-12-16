@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Packages from "./Packages";
 import Journey from "./Journey";
 import ChooseUs from "./ChooseUs";
+import Precautions from "./Precautions";
 export default function Home() {
   return (
     <div className="">
@@ -12,6 +13,7 @@ export default function Home() {
       <Packages />
       <Journey />
       <ChooseUs />
+      <Precautions />
     </div>
   );
 }

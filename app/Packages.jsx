@@ -1,8 +1,6 @@
 "use client";
 import "@splidejs/react-splide/css";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { MoveRight } from "lucide-react";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Packages = () => {
