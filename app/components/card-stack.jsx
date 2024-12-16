@@ -21,7 +21,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
         newArray.unshift(newArray.pop()); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, 3000);
   };
 
   return (
@@ -30,7 +30,7 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute flex flex-col justify-between w-64 h-64 p-4 bg-white border border-gray-500 rounded-lg shadow-lg md:h-60 md:w-96 "
+            className="absolute flex flex-col justify-between p-4 bg-white border border-gray-500 rounded-lg shadow-lg w-60 h-60 md:h-60 md:w-96 "
             style={{
               transformOrigin: "top center",
             }}

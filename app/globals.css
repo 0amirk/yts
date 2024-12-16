@@ -23,12 +23,21 @@ html {
   height: 100%;
 }
 
-.hero-bg-2 {
-  background-image: url("/hero-4.jpg");
+/* .AboutHero {
+  background-image: url("/AboutUs/about.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+} */
+.AboutHero {
+  background-image: url("/AboutUs/about.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
 }
 
 @font-face {
