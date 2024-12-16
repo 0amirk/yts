@@ -27,15 +27,16 @@ const Journey = () => {
               View Packages
             </button>
           </div>
-          <div className="relative w-full sm:max-w-xl lg:w-1/3  border-b-2 border-r pb-1 pr-1 border-[#B78738] rounded-lg">
-            <img
-              src="/journey.jpg"
-              className="h-[400px] w-full rounded-lg hover:translate-y-[-1%] hover:translate-x-[-1%] duration-200 ease-in-out"
-            />
-            <div className="absolute flex gap-1 top-3 left-3 bg-[#B78738] rounded-lg p-2">
-              <a href="tel:02085547070">
-                <PhoneOutgoing className="stroke-black" />
-              </a>
+          <div className="relative w-full sm:max-w-xl group lg:w-1/3  border-b-2 border-r pb-1 pr-1 border-[#B78738] rounded-lg">
+            <div className="hover:translate-y-[-1%] hover:translate-x-[-1%] duration-200 ease-in-out">
+              <img src="/journey.jpg" className="h-[400px] w-full rounded-lg" />
+              <div className="absolute top-0 left-0 flex gap-1 p-3 bg-white rounded-br-lg">
+                <div className="round-top-white ml-[-8px]"></div>
+                <div className="round-bottom-white"></div>
+                <a href="tel:02085547070" className="relative z-20">
+                  <PhoneOutgoing className="stroke-black" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -57,41 +57,99 @@ html {
   transform: translateY(0); /* Moves to its original position */
 }
 
-.hover-border-effect {
+.feature-box {
   position: relative;
+  padding: 7px;
   overflow: hidden;
 }
 
-.hover-border-effect::before {
+.feature-box::before,
+.feature-box::after,
+.feature-box span::before,
+.feature-box span::after {
   content: "";
   position: absolute;
-  inset: 0;
-  border: 2px solid transparent; /* Initial transparent border */
+  background-color: var(--base-color, #b78738); /* Border color */
   z-index: 1;
-  animation: border-fill 1s ease forwards;
-  opacity: 0; /* Hidden initially */
-  transition: opacity 1s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover-border-effect:hover::before {
-  opacity: 1; /* Visible on hover */
-  border: 2px solid red;
+/* Bottom and left borders */
+.feature-box::before {
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start from the bottom-left corner */
+  transform-origin: left; /* Expand away to the right */
 }
 
-@keyframes border-fill {
-  0% {
-    border-width: 2px 0 0 2px; /* Top-left starts */
-  }
-  25% {
-    border-width: 2px 2px 0 2px; /* Top and left fill in */
-  }
-  50% {
-    border-width: 2px 2px 2px 2px; /* All sides visible */
-  }
-  75% {
-    border-width: 2px 2px 2px 2px; /* Smooth continuation */
-  }
-  100% {
-    border-width: 2px 2px 2px 2px; /* Complete border animation */
-  }
+.feature-box::after {
+  height: 100%;
+  width: 3px;
+  bottom: 0;
+  left: 0;
+  transform: scaleY(0); /* Start from the bottom-left corner */
+  transform-origin: bottom; /* Expand away to the top */
+}
+
+/* Top and right borders */
+.feature-box span::before {
+  height: 3px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  transform: scaleX(0); /* Start from the top-right corner */
+  transform-origin: right; /* Expand away to the left */
+}
+
+.feature-box span::after {
+  height: 100%;
+  width: 3px;
+  top: 0;
+  right: 0;
+  transform: scaleY(0); /* Start from the top-right corner */
+  transform-origin: top; /* Expand away to the bottom */
+}
+
+/* Hover effect to trigger the animations */
+.feature-box:hover::before {
+  transform: scaleX(1); /* Expand bottom border */
+}
+
+.feature-box:hover::after {
+  transform: scaleY(1); /* Expand left border */
+}
+.feature-box:hover span::before {
+  transform: scaleX(1); /* Expand top border */
+}
+
+.feature-box:hover span::after {
+  transform: scaleY(1); /* Expand right border */
+}
+
+.round-top-white::before {
+  content: "";
+  position: absolute;
+
+  background-color: transparent;
+  top: 0%;
+  right: -50%;
+  height: 50px;
+  width: 25px;
+  border-top-left-radius: 0.6rem;
+  box-shadow: 0 -25px 0 0 white;
+}
+
+.round-bottom-white::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background-color: transparent;
+  bottom: -104%;
+  left: 0%;
+  height: 50px;
+  width: 25px;
+  border-top-left-radius: 0.6rem;
+  box-shadow: 0 -25px 0 0 white;
 }

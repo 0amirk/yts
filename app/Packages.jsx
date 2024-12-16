@@ -46,18 +46,18 @@ const Packages = () => {
         </div>
         {/* DESKTOP */}
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
-          <div className="flex flex-col items-center justify-around gap-x-4 gap-y-8 md:flex-wrap md:flex-row">
+          <div className="flex flex-col items-center justify-around gap-x-4 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-center h-full fade-in">
-              <div className="overflow-hidden rounded-lg">
+            <div className="flex flex-col items-start justify-center h-full fade-in feature-box">
+              <div className="overflow-hidden">
                 <img
                   src="/hajj-updated.jpg"
                   loading="lazy"
-                  className="rounded-lg md:h-[200px] md:w-[320px]"
+                  className="md:h-[200px] md:w-[320px]"
                 />
               </div>
               <div className="mt-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm mt-[-40px] bg-white w-[120px] rounded-tr-lg pt-[2px]">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Hajj{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
@@ -75,18 +75,18 @@ const Packages = () => {
 
             {/* Second Div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in"
+              className="flex flex-col items-start justify-center h-full fade-in feature-box"
               style={{ transitionDelay: ` 0.2s` }}
             >
-              <div className="overflow-hidden rounded-lg">
+              <div className="overflow-hidden">
                 <img
                   src="/umrah-updated.jpg"
                   loading="lazy"
-                  className="rounded-lg md:h-[200px] md:w-[320px]"
+                  className="md:h-[200px] md:w-[320px]"
                 />
               </div>
               <div className="mt-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm mt-[-40px] bg-white w-[150px] rounded-tr-lg pt-[2px]">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Umrah{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
@@ -103,18 +103,18 @@ const Packages = () => {
             </div>
             {/* third div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in"
+              className="flex flex-col items-start justify-center h-full fade-in feature-box"
               style={{ transitionDelay: ` 0.4s` }}
             >
-              <div className="overflow-hidden rounded-lg">
+              <div className="overflow-hidden">
                 <img
                   src="/ramadan-updated.jpg"
                   loading="lazy"
-                  className="rounded-lg md:h-[200px] md:w-[320px]"
+                  className="md:h-[200px] md:w-[320px]"
                 />
               </div>
               <div className="mt-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm mt-[-40px] bg-white w-[180px] rounded-tr-lg pt-[2px]">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Ramadan{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
@@ -129,21 +129,21 @@ const Packages = () => {
                 </button>
               </div>
             </div>
-            {/* fourth div */}
 
+            {/* fourth div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in"
+              className="flex flex-col items-start justify-center h-full fade-in feature-box"
               style={{ transitionDelay: ` 0.6s` }}
             >
-              <div className="overflow-hidden rounded-lg">
+              <div className="overflow-hidden">
                 <img
                   src="/ziyarat.jpg"
                   loading="lazy"
-                  className="rounded-lg md:h-[200px] md:w-[320px]"
+                  className="md:h-[200px] md:w-[320px]"
                 />
               </div>
               <div className="mt-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm mt-[-40px] bg-white w-[150px] rounded-tr-lg pt-[2px]">
+                <p className="text-3xl text-[#B78738] font-semibold font-charm">
                   Ziyarat{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
