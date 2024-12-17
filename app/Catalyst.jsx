@@ -38,7 +38,7 @@ const Catalyst = () => {
           <div className="text-black text-sm md:text-[15px] bg-white  w-[80%] p-2">
             <div className="bg-[#ca9745]  flex flex-col-reverse gap-3 md:flex-row h-full ">
               <div className="bg-black md:w-[30%] p-4 md:h-full flex justify-center items-center">
-                <img src="/award1.svg" className="w-[126px] h-[147px]" />
+                <img src="/Award1.svg" className="w-[126px] h-[147px]" />
               </div>
               <div className="md:max-w-[70%] p-4 flex flex-col justify-center">
                 <p className="text-[24px] md:text-[33px] mb-4 font-bold">
