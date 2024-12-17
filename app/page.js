@@ -7,6 +7,7 @@ import ChooseUs from "./ChooseUs";
 import Precautions from "./Precautions";
 import Catalyst from "./Catalyst";
 import Footer from "./Footer";
+import Accred from "./Accred";
 export default function Home() {
   return (
     <div className="">
@@ -17,6 +18,7 @@ export default function Home() {
       <ChooseUs />
       <Precautions />
       <Catalyst />
+      <Accred />
       <Footer />
     </div>
   );

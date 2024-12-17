@@ -29,7 +29,7 @@ const ChooseUs = () => {
   }, []);
 
   return (
-    <main className="flex justify-around items-center rounded-b-lg shadow-lg backdrop-blur-md flex-col-reverse md:flex-row  md:gap-12 w-full mb-6 bg-[#ca9745] px-4 py-6">
+    <main className="flex justify-around items-center flex-col-reverse md:flex-row  md:gap-12 w-full mb-6 bg-[#ca9745] px-4 py-6">
       <div className="rounded-lg fade-in">
         <div
           className="relative flex items-center justify-center mt-6 mb-6 cursor-pointer"
