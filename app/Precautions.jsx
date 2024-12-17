@@ -6,7 +6,7 @@ const Precautions = () => {
 
     const observerOptions = {
       root: null, // Use the viewport
-      threshold: 0.7, // Trigger when 10% of the element is visible
+      threshold: 0.7, // Trigger when 70% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -47,7 +47,7 @@ const Precautions = () => {
   return (
     <main>
       <div>
-        <div className="flex flex-col items-center justify-center w-full px-4 py-6 mt-12 text-center">
+        <div className="flex flex-col items-center justify-center w-full px-4 py-6 mt-12 mb-24 text-center">
           <p className="text-[25px] md:text-[35px] font-semibold font-charm text-[#B78738]">
             Saftey Tips While Performing Umrah
           </p>
@@ -61,7 +61,7 @@ const Precautions = () => {
                 <div
                   className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[300px] items-center justify-center rounded-lg group"
                   key={index}
-                  style={{ transitionDelay: ` ${index * 0.5}` }}
+                  style={{ transitionDelay: ` ${index * 0.3}s` }}
                 >
                   <div className="flex items-center justify-center w-20 h-20 md:w-32 md:h-32">
                     <img src={card.img} />

@@ -26,11 +26,29 @@ html {
 .AboutHero {
   background-image: url("/AboutUs/about.jpeg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* Full viewport height */
   position: relative;
   background-attachment: fixed; /* Enables parallax scrolling */
+}
+
+.catalyst-bg {
+  background-image: url("/catalyst.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
+}
+
+@media (max-width: 768px) {
+  .catalyst-bg {
+    background-position: 60%; /* Adjust focus to the right */
+    background-size: cover; /* Ensure full image is visible without cropping */
+    background-attachment: fixed; /* Disable parallax on smaller screens */
+  }
 }
 
 @font-face {
@@ -57,6 +75,19 @@ html {
 .fade-in.show {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Moves to its original position */
+}
+
+.fade-side {
+  opacity: 0; /* Hidden initially */
+  transform: translateX(
+    50px
+  ); /* Starts from the right (positive X direction) */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
+}
+
+.fade-side.show {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Moves to its original position */
 }
 
 .precautions-opacity {

@@ -5,6 +5,7 @@ import Packages from "./Packages";
 import Journey from "./Journey";
 import ChooseUs from "./ChooseUs";
 import Precautions from "./Precautions";
+import Catalyst from "./Catalyst";
 export default function Home() {
   return (
     <div className="">
@@ -14,6 +15,7 @@ export default function Home() {
       <Journey />
       <ChooseUs />
       <Precautions />
+      <Catalyst />
     </div>
   );
 }
