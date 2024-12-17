@@ -6,6 +6,7 @@ import Journey from "./Journey";
 import ChooseUs from "./ChooseUs";
 import Precautions from "./Precautions";
 import Catalyst from "./Catalyst";
+import Footer from "./Footer";
 export default function Home() {
   return (
     <div className="">
@@ -16,6 +17,7 @@ export default function Home() {
       <ChooseUs />
       <Precautions />
       <Catalyst />
+      <Footer />
     </div>
   );
 }
