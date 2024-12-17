@@ -59,7 +59,7 @@ const Catalyst = () => {
             </div>
           </div>
         </div>
-        <div className="md:max-w-lg max-w-[300px] px-4 py-6 mt-20 md:mt-12 text-white fade-side">
+        <div className="md:max-w-lg max-w-[300px] px-4 py-6 mt-24 md:mt-12 text-white fade-side">
           <p className="text-[30px] md:text-[35px] font-semibold font-charm">
             Your Intention Will Be The Catalyst Of Your Transformation
           </p>

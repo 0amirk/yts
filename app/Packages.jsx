@@ -1,7 +1,7 @@
 "use client";
 import "@splidejs/react-splide/css";
 import { MoveRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Packages = () => {
   useEffect(() => {
