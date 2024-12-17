@@ -13,7 +13,11 @@ const Accred = () => {
           is listed on it. Please see our booking conditions for further
           information or for more information about financial protection and the
           ATOL Certificate go to:{" "}
-          <a href="www.caa.co.uk" target="_blank" className="text-[#B78738]">
+          <a
+            href="https://www.caa.co.uk/"
+            target="_blank"
+            className="text-[#B78738]"
+          >
             www.caa.co.uk
           </a>
         </p>
