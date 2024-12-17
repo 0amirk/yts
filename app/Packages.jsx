@@ -45,20 +45,20 @@ const Packages = () => {
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
           <div className="flex flex-col items-center justify-around gap-x-4 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-center h-full fade-in feature-box">
+            <div className="flex flex-col items-start justify-center h-full fade-in">
               <div className="overflow-hidden">
                 <img
-                  src="/hajj-updated.jpg"
+                  src="/test-hajj.jpg"
                   loading="lazy"
-                  className="md:h-[200px] md:w-[320px]"
+                  className="h-[230px] w-[320px]"
                 />
               </div>
-              <div className="mt-2 ml-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+              <div className="mt-2 w-full md:w-[320px] feature-box">
+                <p className="text-2xl font-semibold">
                   Hajj{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
-                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                <p className="mt-3 text-lg font-medium max-w-[300px]">
                   The Reward For An Accepted Hajj is Paradise
                 </p>
                 <button className="mt-1 md:text-lg group">
@@ -72,22 +72,22 @@ const Packages = () => {
 
             {/* Second Div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in feature-box"
+              className="flex flex-col items-start justify-center h-full fade-in"
               style={{ transitionDelay: ` 0.2s` }}
             >
               <div className="overflow-hidden">
                 <img
-                  src="/umrah-updated.jpg"
+                  src="/test-madina.jpg"
                   loading="lazy"
-                  className="md:h-[200px] md:w-[320px]"
+                  className="h-[230px] w-[320px]"
                 />
               </div>
-              <div className="mt-2 ml-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+              <div className="mt-2 w-full md:w-[320px] feature-box">
+                <p className="text-2xl font-semibold">
                   Umrah{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
-                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                <p className="mt-3 text-lg font-medium max-w-[300px]">
                   Umrah Trips That Are Planned As Per Your Needs
                 </p>
                 <button className="mt-1 md:text-lg group">
@@ -100,26 +100,26 @@ const Packages = () => {
             </div>
             {/* third div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in feature-box"
+              className="flex flex-col items-start justify-center h-full fade-in"
               style={{ transitionDelay: ` 0.4s` }}
             >
               <div className="overflow-hidden">
                 <img
-                  src="/ramadan-updated.jpg"
+                  src="/test-ramadan.jpg"
                   loading="lazy"
-                  className="md:h-[200px] md:w-[320px]"
+                  className="h-[230px] w-[320px]"
                 />
               </div>
-              <div className="mt-2 ml-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+              <div className="mt-2 w-full md:w-[320px] feature-box">
+                <p className="text-2xl font-semibold">
                   Ramadan{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
-                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                <p className="mt-3 text-lg font-medium max-w-[300px]">
                   Curating The Best For Ramadan Umrah
                 </p>
-                <button className="mt-1">
-                  <div className="flex md:text-lg items-center gap-[6px] group">
+                <button className="mt-1 md:text-lg group">
+                  <div className="flex items-center gap-[6px]">
                     <p>Enquire Now</p>{" "}
                     <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
                   </div>
@@ -129,24 +129,24 @@ const Packages = () => {
 
             {/* fourth div */}
             <div
-              className="flex flex-col items-start justify-center h-full fade-in feature-box"
+              className="flex flex-col items-start justify-center h-full fade-in"
               style={{ transitionDelay: ` 0.6s` }}
             >
               <div className="overflow-hidden">
                 <img
-                  src="/ziyarat.jpg"
+                  src="/test-ziyarat.jpg"
                   loading="lazy"
-                  className="md:h-[200px] md:w-[320px]"
+                  className="h-[230px] md:w-[320px]"
                 />
               </div>
-              <div className="mt-2 ml-2">
-                <p className="text-3xl text-[#B78738] font-semibold font-charm">
+              <div className="mt-2 w-full md:w-[320px] feature-box">
+                <p className="text-2xl font-semibold">
                   Ziyarat{" "}
                   <span className="text-xl font-normal text-black">2025</span>
                 </p>
-                <p className="mt-3 text-lg font-semibold max-w-[300px]">
+                <p className="mt-3 text-lg font-medium max-w-[300px]">
                   Offer Salutations And Greetings To Muhammad{" "}
-                  <span className="text-[#B78738] font-bold">ﷺ</span>
+                  <span className="text-2xl"> ﷺ</span>
                 </p>
                 <button className="mt-1 md:text-lg group">
                   <div className="flex items-center gap-[6px]">
