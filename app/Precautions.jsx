@@ -1,52 +1,47 @@
 "use client";
-"use client";
-import { CardStack } from "./components/card-stack";
-import { cn } from "./utils";
+import { useEffect } from "react";
 const Precautions = () => {
+  useEffect(() => {
+    const opacityIns = document.querySelectorAll(".precautions-opacity");
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.7, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    opacityIns.forEach((opacityIn) => observer.observe(opacityIn));
+
+    // Cleanup the observer on component unmount
+    return () => observer.disconnect();
+  }, []);
   const CARDS = [
     {
       id: 0,
-      content: (
-        <div className="flex flex-col items-center group ">
-          <img src="/hands.png" />
-          <p className="mt-12 text-lg md:text-xl text-[#303030] group-hover:text-[#b78738] transition-all duration-300">
-            Wash your hands frequently with soap and water
-          </p>
-        </div>
-      ),
+      img: "/hands.png",
+      text: "Wash your hands often using soap and water properly",
     },
     {
       id: 1,
-      content: (
-        <div className="flex flex-col items-center group ">
-          <img src="/face.png" />
-          <p className="mt-12 text-lg md:text-xl text-[#303030] group-hover:text-[#b78738] transition-all duration-300">
-            Avoid touching your face as much as possible
-          </p>
-        </div>
-      ),
+      img: "/face.png",
+      text: "Avoid touching your face, eyes, nose, or mouth frequently",
     },
     {
       id: 2,
-      content: (
-        <div className="flex flex-col items-center group ">
-          <img src="/cover.png" />
-          <p className="mt-12 text-lg md:text-xl text-[#303030] group-hover:text-[#b78738] transition-all duration-300">
-            Cover your mouth and nose while coughing or sneezing
-          </p>
-        </div>
-      ),
+      img: "/cover.png",
+      text: "Cover your mouth and nose when you cough or sneeze",
     },
     {
       id: 3,
-      content: (
-        <div className="flex flex-col items-center group ">
-          <img src="/mask.png" />
-          <p className="mt-12 text-lg md:text-xl text-[#303030] group-hover:text-[#b78738] transition-all duration-300">
-            Discard disposable masks frequently
-          </p>
-        </div>
-      ),
+      img: "/mask.png",
+      text: "Dispose of used masks and tissues properly and regularly.",
     },
   ];
   return (
@@ -56,12 +51,27 @@ const Precautions = () => {
           <p className="text-[25px] md:text-[35px] font-semibold font-charm text-[#B78738]">
             Saftey Tips While Performing Umrah
           </p>
-          <p className="md:mb-20 mb-16 text-lg md:text-xl text-[#303030] mt-2 ">
+          <p className="md:mb-12 mb-6 text-lg md:text-xl text-[#303030] mt-2 ">
             Some of the most important points to consider while perfoming
             Umrah/Hajj, keeping in mind the most recent pandemic.
           </p>
-          <div className="flex justify-center w-full">
-            <CardStack items={CARDS} />
+          <div className="flex flex-wrap items-center justify-around w-full gap-4">
+            {CARDS.map((card, index) => {
+              return (
+                <div
+                  className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[300px] items-center justify-center rounded-lg group"
+                  key={index}
+                  style={{ transitionDelay: ` ${index * 0.5}` }}
+                >
+                  <div className="flex items-center justify-center w-20 h-20 md:w-32 md:h-32">
+                    <img src={card.img} />
+                  </div>
+                  <p className="text-sm md:text-lg text-[#303030] max-w-[250px] group-hover:text-[#b78738] transition-all duration-300">
+                    {card.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

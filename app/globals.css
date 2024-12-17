@@ -23,13 +23,6 @@ html {
   height: 100%;
 }
 
-/* .AboutHero {
-  background-image: url("/AboutUs/about.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-} */
 .AboutHero {
   background-image: url("/AboutUs/about.jpeg");
   background-size: cover;
@@ -64,6 +57,14 @@ html {
 .fade-in.show {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Moves to its original position */
+}
+
+.precautions-opacity {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+.precautions-opacity.show {
+  opacity: 1; /* Fully visible */
 }
 
 @keyframes opacity-in {
