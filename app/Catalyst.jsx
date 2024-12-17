@@ -33,8 +33,8 @@ const Catalyst = () => {
   }, []);
   return (
     <main>
-      <div className="flex items-end bg-black md:items-center catalyst-bg">
-        <div className="md:max-w-lg max-w-[300px] px-4 py-6 mt-12 text-white fade-side">
+      <div className="flex items-start bg-black md:items-center catalyst-bg">
+        <div className="md:max-w-lg max-w-[300px] px-4 py-6 mt-6 md:mt-12 text-white fade-side">
           <p className="text-[30px] md:text-[35px] font-semibold font-charm">
             Your Intention Will Be The Catalyst Of Your Transformation
           </p>

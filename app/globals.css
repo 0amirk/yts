@@ -46,8 +46,10 @@ html {
 @media (max-width: 768px) {
   .catalyst-bg {
     background-position: 60%; /* Adjust focus to the right */
-    background-size: cover; /* Ensure full image is visible without cropping */
-    background-attachment: fixed; /* Disable parallax on smaller screens */
+    background-attachment: scroll; /* Disable parallax on smaller screens */
+  }
+  .AboutHero {
+    background-attachment: scroll; /* Disable parallax on smaller screens */
   }
 }
 
