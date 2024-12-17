@@ -51,7 +51,7 @@ const Blogs = () => {
                     className="md:h-[200px] md:w-[320px] rounded-lg"
                   />
                 </div>
-                <div className="px-4 py-8 mt-2 ">
+                <div className="px-4 pb-8">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     <span className="text-base font-normal text-black">
                       17th August, 2021
@@ -74,7 +74,7 @@ const Blogs = () => {
                     className="md:h-[200px] md:w-[320px] rounded-lg"
                   />
                 </div>
-                <div className="px-4 py-8 mt-2 ">
+                <div className="px-4 pb-8">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     <span className="text-base font-normal text-black">
                       17th August, 2021
@@ -96,7 +96,7 @@ const Blogs = () => {
                     className="md:h-[200px] md:w-[320px] rounded-lg"
                   />
                 </div>
-                <div className="px-4 py-8 mt-2 ">
+                <div className="px-4 pb-8">
                   <p className="text-3xl text-[#B78738] font-semibold font-charm">
                     <span className="text-base font-normal text-black">
                       17th August, 2021

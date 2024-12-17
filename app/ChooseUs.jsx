@@ -35,7 +35,7 @@ const ChooseUs = () => {
           className="relative flex items-center justify-center mt-6 mb-6 cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
-          <Play className="absolute w-14 h-14 stroke-black animate-play" />
+          <Play className="absolute w-14 h-14 stroke-white animate-play" />
           <img src="/WhyChooseUs.jpg" className="rounded-lg" />
         </div>
       </div>
