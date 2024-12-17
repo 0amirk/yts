@@ -16,7 +16,7 @@ html {
 }
 
 .hero-bg {
-  background-image: url("/hero.jpg");
+  background-image: url("/man-praying-up-bw.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -51,6 +51,9 @@ html {
   .AboutHero {
     background-attachment: scroll; /* Disable parallax on smaller screens */
   }
+  .hero-bg {
+    background-position: 25%;
+  }
 }
 
 @font-face {
@@ -66,6 +69,21 @@ html {
   src: url("/font/Charm-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "My-Soul";
+  src: url("/font/MySoul-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/font/Montserrat-VariableFont.ttf") format("truetype");
+  font-weight: 100 900; /* Range of font weights */
+  font-style: normal;
+  font-display: swap; /* Ensures font loads quickly */
 }
 
 .fade-in {

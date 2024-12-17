@@ -13,6 +13,8 @@ export default {
       },
       fontFamily: {
         charm: ["Charm", "sans-serif"],
+        mySoul: ["My-Soul", "cursive"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       fontWeight: {
         normal: "400",

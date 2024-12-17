@@ -26,10 +26,10 @@ const Packages = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <main className="flex justify-center w-full mb-6 text-white/95">
+    <main className="flex justify-center w-full mb-6 font-montserrat text-white/95">
       <div className="flex flex-col bg-white shadow-lg backdrop-blur-md w-[100%] rounded-b-lg ">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] ">
-          <p className="text-[25px] md:!text-[35px] text-[#B78738] font-charm md:text-lg">
+          <p className="text-[25px] md:!text-[40px] text-[#B78738] font-mySoul md:text-lg">
             Explore options to visit the house of ﷻ ﷲ
           </p>
           <p className="mt-6 md:text-[25px] text-[20px] font-semibold text-black">
