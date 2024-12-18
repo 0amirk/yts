@@ -50,7 +50,7 @@ const Packages = () => {
         <div className="mt-4 text-black md:block">
           <div className="flex flex-col items-center shrink md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/hajj.jpg"
@@ -76,7 +76,7 @@ const Packages = () => {
               </div>
             </div>
             {/*Second Div*/}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/umrah.jpg"
@@ -106,7 +106,7 @@ const Packages = () => {
           {/* NEXT ROW */}
           <div className="flex flex-col items-center shrink md:flex-row">
             {/* THIRD DIV */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ramadan.jpg"
@@ -133,7 +133,7 @@ const Packages = () => {
             </div>
 
             {/* FOURTH DIV */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ziyarat.jpg"

@@ -8,7 +8,7 @@ const Journey = () => {
       <p className="text-[38px] sm:text-[45px] md:text-[50px] text-center font-abril text-[#B78738] md:mb-8">
         Plan Your Spiritual Journey With Us
       </p>
-      <div className="flex flex-col md:flex-row-reverse items-center w-[100%] ">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center w-[100%] ">
         <div className="text-center md:w-1/2  w-full px-3 md:px-10 py-6 text-[#B78738]">
           <div>
             <p className="text-[#303030] max-w-3xl">
@@ -28,7 +28,7 @@ const Journey = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-full group md:w-1/2">
+        <div className="relative w-full group md:w-1/3">
           <div className="h-[500px]">
             <img
               src="/journey.jpg"

@@ -34,7 +34,7 @@ const Catalyst = () => {
   return (
     <main>
       <div className="relative flex items-start bg-black md:items-center catalyst-bg">
-        <div className="absolute top-[-68%] md:top-[-20%] z-20 flex justify-center w-full min-h-[400px] md:min-h-0 md:h-1/3">
+        {/* <div className="absolute top-[-68%] md:top-[-20%] z-20 flex justify-center w-full min-h-[400px] md:min-h-0 md:h-1/3">
           <div className="text-black text-sm md:text-[15px] bg-white  w-[80%] p-2">
             <div className="bg-[#ca9745]  flex flex-col-reverse gap-3 md:flex-row h-full ">
               <div className="bg-black md:w-[30%] p-4 md:h-full flex justify-center items-center">
@@ -58,7 +58,7 @@ const Catalyst = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="md:max-w-lg max-w-[300px] px-4 py-6 mt-24 md:mt-12 text-white fade-side">
           <p className="text-[30px] md:text-[35px] font-semibold font-charm">
             Your Intention Will Be The Catalyst Of Your Transformation

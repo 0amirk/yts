@@ -9,6 +9,7 @@ import Catalyst from "./Catalyst";
 import Footer from "./Footer";
 import Accred from "./Accred";
 import Blogs from "./Blogs";
+import Awards from "./Awards";
 export default function Home() {
   return (
     <div className="">
@@ -18,6 +19,7 @@ export default function Home() {
       <Journey />
       <ChooseUs />
       <Precautions />
+      <Awards />
       <Catalyst />
       <Blogs />
       <Accred />

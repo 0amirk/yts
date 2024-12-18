@@ -47,7 +47,7 @@ const Precautions = () => {
   return (
     <main>
       <div>
-        <div className="flex flex-col items-center font-montserrat justify-center w-full px-4 py-6 mt-16 text-center mb-[400px] md:mb-32">
+        <div className="flex flex-col items-center justify-center w-full px-4 py-6 mt-16 mb-12 text-center font-montserrat">
           <p className="text-[25px] md:text-[35px] font-abril text-[#B78738]">
             Saftey Tips While Performing Umrah
           </p>
