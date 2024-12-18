@@ -42,13 +42,13 @@ const Blogs = () => {
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
           <div className="flex flex-col items-center justify-center gap-x-12 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-center h-full rounded-lg shadow-lg precautions-opacity">
+            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
               <Link href="/blog1">
                 <div className="overflow-hidden">
                   <img
                     src="/blog1.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px] rounded-lg"
+                    className="h-[300px] w-[340px]"
                   />
                 </div>
                 <div className="px-4 pb-8">
@@ -65,13 +65,13 @@ const Blogs = () => {
             </div>
 
             {/* Second Div */}
-            <div className="flex flex-col items-start justify-center h-full rounded-lg shadow-lg precautions-opacity">
+            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
               <Link href="/blog2">
                 <div className="overflow-hidden">
                   <img
                     src="/blog2.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px] rounded-lg"
+                    className="h-[300px] w-[340px]"
                   />
                 </div>
                 <div className="px-4 pb-8">
@@ -87,13 +87,13 @@ const Blogs = () => {
               </Link>
             </div>
             {/* third div */}
-            <div className="flex flex-col items-start justify-center h-full rounded-lg shadow-lg precautions-opacity">
+            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
               <Link href="/blog3">
                 <div className="overflow-hidden">
                   <img
                     src="/blog3.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px] rounded-lg"
+                    className="h-[300px] w-[340px]"
                   />
                 </div>
                 <div className="px-4 pb-8">

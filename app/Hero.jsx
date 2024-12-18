@@ -10,7 +10,7 @@ const Hero = () => {
             <p className="text-[38px] sm:text-[45px] md:text-[50px] font-abril text-white">
               Transform Your Life
             </p>
-            <p className="text-[30px] sm:text-[36px] md:mt-[-10px] md:text-[40px] font-oswald ">
+            <p className="text-[25px] md:mt-[-10px] md:text-[30px] font-semibold ">
               By Transforming Yourself!
             </p>
             <p className="mt-6 text-base text-white md:mt-4 md:text-lg ">

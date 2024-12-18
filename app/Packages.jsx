@@ -37,7 +37,7 @@ const Packages = () => {
             Explore options to visit the house of{" "}
             <span className=""> ﷻ ﷲ </span>
           </p>
-          <p className="mt-6 md:text-[25px] text-[20px] font-medium text-black font-oswald">
+          <p className="mt-6 md:text-[25px] text-[20px] font-medium text-black font-semibold">
             Pilgrim Packages
           </p>
           <p className="text-[#303030] mt-2 max-w-5xl">

@@ -100,12 +100,12 @@ html {
 }
 
 /* Oswald */
-@font-face {
+/* @font-face {
   font-family: "Oswald";
   src: url("/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-  font-weight: 200 900; /* Variable font range */
+  font-weight: 200 900; 
   font-style: normal;
-}
+} */
 
 .fade-in {
   opacity: 0; /* Hidden initially */
@@ -120,9 +120,7 @@ html {
 
 .fade-side {
   opacity: 0; /* Hidden initially */
-  transform: translateX(
-    -50px
-  ); /* Starts from the right (negative X direction) */
+  transform: translateX(-50px); /* Starts from the right ( X direction) */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
 }
 
