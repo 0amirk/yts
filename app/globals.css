@@ -43,33 +43,14 @@ html {
   background-attachment: fixed; /* Enables parallax scrolling */
 }
 
-.hajj-bg {
-  background-image: url("/test-hajj-bw.jpg");
+.chooseUs-bg {
+  background-image: url("/chooseUs.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
-}
-.umrah-bg {
-  background-image: url("/test-umrah-bw.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-.ramadan-bg {
-  background-image: url("/test-ramadan-bw.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-.ziyarat-bg {
-  background-image: url("/test-ziyarat-bw.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 100%;
+  height: 50vh; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
 }
 
 @media (max-width: 768px) {
@@ -82,6 +63,9 @@ html {
   }
   .hero-bg {
     background-position: 25%;
+  }
+  .chooseUs-bg {
+    background-attachment: scroll;
   }
 }
 
@@ -101,13 +85,6 @@ html {
 }
 
 @font-face {
-  font-family: "My-Soul";
-  src: url("/font/MySoul-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url("/font/Montserrat-VariableFont.ttf") format("truetype");
   font-weight: 100 900; /* Range of font weights */
@@ -119,14 +96,6 @@ html {
   font-family: "Abril Fatface";
   src: url("/font/AbrilFatface-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
-
-/* Playfair Display */
-@font-face {
-  font-family: "Playfair Display";
-  src: url("/font/Oswald-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; /* Variable font range */
   font-style: normal;
 }
 
@@ -254,38 +223,12 @@ html {
   transform: scaleY(1); /* Expand right border */
 }
 
-.round-top-white::before {
-  content: "";
-  position: absolute;
-
-  background-color: transparent;
-  top: 0%;
-  right: -52%;
-  height: 50px;
-  width: 25px;
-  border-top-left-radius: 0.6rem;
-  box-shadow: 0 -25px 0 0 white;
-}
-
-.round-bottom-white::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  background-color: transparent;
-  bottom: -104%;
-  left: 0%;
-  height: 50px;
-  width: 25px;
-  border-top-left-radius: 0.6rem;
-  box-shadow: 0 -25px 0 0 white;
-}
-
 @keyframes play {
   0% {
     scale: 100%;
   }
   50% {
-    scale: 115%;
+    scale: 125%;
   }
   100% {
     scale: 100%;
@@ -293,5 +236,5 @@ html {
 }
 
 .animate-play {
-  animation: play 2.5s ease-in-out 1s infinite;
+  animation: play 2.5s ease-in-out 0.5s infinite;
 }

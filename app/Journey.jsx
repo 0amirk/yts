@@ -4,14 +4,14 @@ import { PhoneOutgoing } from "lucide-react";
 
 const Journey = () => {
   return (
-    <main className="flex justify-center w-full mb-6">
-      <div className="flex flex-col w-[100%] ">
-        <div className="text-center flex flex-col-reverse lg:flex-row-reverse items-center justify-center md:justify-around gap-12 mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738]">
+    <main className="flex flex-col items-center justify-center w-full pt-12 md:py-16 font-montserrat">
+      <p className="text-[38px] sm:text-[45px] md:text-[50px] text-center font-abril text-[#B78738] md:mb-8">
+        Plan Your Spiritual Journey With Us
+      </p>
+      <div className="flex flex-col md:flex-row-reverse items-center w-[100%] ">
+        <div className="text-center md:w-1/2  w-full px-3 md:px-10 py-6 text-[#B78738]">
           <div>
-            <p className="text-[25px] md:text-[35px] font-semibold text-[#B78738] font-charm">
-              Plan Your Spiritual Journey With Us
-            </p>
-            <p className="text-[#303030] mt-4 max-w-3xl">
+            <p className="text-[#303030] max-w-3xl">
               Our legacy of facilitating pilgrims in performing their Umrah and
               obligatory religious Hajj duty goes back to over two decades when
               the visionary Late Haji Bashir Bhai Chokhawala laid the foundation
@@ -23,20 +23,24 @@ const Journey = () => {
               The above put together drives our expertise to be able to curate
               nothing but the best for your journey to the house of Allah.
             </p>
-            <button className="border-[#B78738] text-[#B78738] border rounded-lg font-medium md:text-xl px-5 py-1 mt-6">
+            <button className="border-[#B78738] text-[#B78738] border font-medium md:text-xl px-5 py-1 mt-6">
               View Packages
             </button>
           </div>
-          <div className="relative w-full sm:max-w-xl group lg:w-1/3  border-b-2 border-r pb-1 pr-1 border-[#B78738] rounded-lg">
-            <div className="hover:translate-y-[-1%] hover:translate-x-[-1%] duration-200 ease-in-out">
-              <img src="/journey.jpg" className="h-[400px] w-full rounded-lg" />
-              <div className="absolute top-0 left-0 flex gap-1 p-3 bg-white rounded-br-lg">
-                <div className="round-top-white ml-[-8px]"></div>
-                <div className="round-bottom-white"></div>
-                <a href="tel:02085547070" className="relative z-20">
-                  <PhoneOutgoing className="stroke-black" />
-                </a>
-              </div>
+        </div>
+        <div className="relative w-full group md:w-1/2">
+          <div className="h-[500px]">
+            <img
+              src="/journey.jpg"
+              className="w-full h-full transition-all duration-500 ease-in-out filter grayscale group-hover:grayscale-0"
+            />
+            <div className="absolute top-[2%] right-[2%] hover:scale-95 hover:opacity-80 opacity-90 duration-300 ease-in-out px-5 py-3 bg-white">
+              <a
+                href="tel:02085547070"
+                className="relative z-20 flex items-center gap-3 text-xl"
+              >
+                <PhoneOutgoing className="stroke-black" /> Call Us
+              </a>
             </div>
           </div>
         </div>

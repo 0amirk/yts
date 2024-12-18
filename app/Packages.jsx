@@ -30,7 +30,7 @@ const Packages = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <main className="flex justify-center w-full mb-6 font-montserrat text-white/95">
+    <main className="flex justify-center w-full font-montserrat text-white/95">
       <div className="flex flex-col w-full bg-white">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] ">
           <p className="text-[25px] md:!text-[40px] text-[#B78738] font-abril  md:text-lg">
@@ -47,7 +47,7 @@ const Packages = () => {
             relaxed state of mind during the sacred journey.
           </p>
         </div>
-        <div className="mt-4 mb-8 text-black md:mb-10 md:block">
+        <div className="mt-4 text-black md:block">
           <div className="flex flex-col items-center shrink md:flex-row">
             {/* First Div */}
             <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">

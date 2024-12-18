@@ -47,8 +47,8 @@ const Precautions = () => {
   return (
     <main>
       <div>
-        <div className="flex flex-col items-center justify-center w-full px-4 py-6 mt-12 text-center mb-[400px] md:mb-32">
-          <p className="text-[25px] md:text-[35px] font-semibold font-charm text-[#B78738]">
+        <div className="flex flex-col items-center font-montserrat justify-center w-full px-4 py-6 mt-16 text-center mb-[400px] md:mb-32">
+          <p className="text-[25px] md:text-[35px] font-abril text-[#B78738]">
             Saftey Tips While Performing Umrah
           </p>
           <p className="md:mb-12 mb-6 text-lg md:text-xl text-[#303030] mt-2 ">
@@ -59,7 +59,7 @@ const Precautions = () => {
             {CARDS.map((card, index) => {
               return (
                 <div
-                  className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[300px] items-center justify-center rounded-lg group"
+                  className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[280px] items-center justify-center rounded-lg group"
                   key={index}
                   style={{ transitionDelay: ` ${index * 0.3}s` }}
                 >
