@@ -24,10 +24,10 @@ const Blogs = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <main className="flex justify-center w-full mb-6 text-white/95">
-      <div className="flex flex-col bg-white  w-[100%] rounded-b-lg ">
+    <main className="flex justify-center w-full mb-6 text-white/95 font-montserrat">
+      <div className="flex flex-col bg-white  w-[100%]">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] ">
-          <p className="text-[25px] md:!text-[35px] text-[#B78738] font-charm md:text-lg">
+          <p className="text-[25px] md:!text-[35px] text-[#B78738] font-abril md:text-lg">
             Guide Blogs
           </p>
           <p className="mt-6 md:text-[25px] text-[20px] font-semibold text-black">
@@ -48,12 +48,12 @@ const Blogs = () => {
                   <img
                     src="/blog1.jpg"
                     loading="lazy"
-                    className="md:h-[200px] md:w-[320px] rounded-lg"
+                    className="h-[300px] w-[340px] rounded-lg"
                   />
                 </div>
                 <div className="px-4 pb-8">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    <span className="text-base font-normal text-black">
+                  <p className="text-3xl text-[#B78738] font-abril">
+                    <span className="text-base font-normal text-black/80">
                       17th August, 2021
                     </span>
                   </p>
@@ -71,12 +71,12 @@ const Blogs = () => {
                   <img
                     src="/blog2.jpg"
                     loading="lazy"
-                    className="md:h-[200px] md:w-[320px] rounded-lg"
+                    className="h-[300px] w-[340px] rounded-lg"
                   />
                 </div>
                 <div className="px-4 pb-8">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    <span className="text-base font-normal text-black">
+                  <p className="text-3xl text-[#B78738] font-abril">
+                    <span className="text-base font-normal text-black/80">
                       17th August, 2021
                     </span>
                   </p>
@@ -93,12 +93,12 @@ const Blogs = () => {
                   <img
                     src="/blog3.jpg"
                     loading="lazy"
-                    className="md:h-[200px] md:w-[320px] rounded-lg"
+                    className="h-[300px] w-[340px] rounded-lg"
                   />
                 </div>
                 <div className="px-4 pb-8">
-                  <p className="text-3xl text-[#B78738] font-semibold font-charm">
-                    <span className="text-base font-normal text-black">
+                  <p className="text-3xl text-[#B78738] font-abril">
+                    <span className="text-base font-normal text-black/80">
                       17th August, 2021
                     </span>
                   </p>

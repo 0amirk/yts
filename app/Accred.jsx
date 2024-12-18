@@ -1,8 +1,8 @@
 const Accred = () => {
   return (
     <main>
-      <div className="px-6 py-3 md:px-12 md:py-6">
-        <p className="text-[25px] text-center font-semibold font-charm text-[#B78738]">
+      <div className="px-6 py-3 md:px-12 md:py-6 font-montserrat">
+        <p className="text-[25px] font-abril text-center  text-[#B78738]">
           Accreditations
         </p>
         <p className="text-center">

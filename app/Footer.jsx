@@ -3,7 +3,7 @@ import { Copyright, Mail, MapPin, Phone } from "lucide-react";
 const Footer = () => {
   return (
     <main>
-      <div className="flex items-center  flex-wrap  justify-center gap-4 py-1 text-[10px] md:text-[12px] text-white bg-black">
+      <div className="flex items-center font-montserrat  flex-wrap  justify-center gap-4 py-1 text-[10px] md:text-[12px] text-white bg-black">
         <a
           href="mailto:hello@yourtravelshop.com"
           className="flex items-center gap-1"
