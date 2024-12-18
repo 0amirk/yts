@@ -95,7 +95,7 @@ export default function Navbar() {
   // Add scroll listener to check when user scrolls past the hero section
   useEffect(() => {
     const handleScroll = () => {
-      const ninetyVH = window.innerHeight * 0.7;
+      const ninetyVH = window.innerHeight * 0.2;
       if (window.scrollY > ninetyVH) {
         // If scrolled past hero section (assumed to be viewport height)
         setHasScrolled(true);

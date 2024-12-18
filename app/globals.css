@@ -43,6 +43,35 @@ html {
   background-attachment: fixed; /* Enables parallax scrolling */
 }
 
+.hajj-bg {
+  background-image: url("/test-hajj-bw.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.umrah-bg {
+  background-image: url("/test-umrah-bw.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.ramadan-bg {
+  background-image: url("/test-ramadan-bw.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.ziyarat-bg {
+  background-image: url("/test-ziyarat-bw.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
   .catalyst-bg {
     background-position: 60%; /* Adjust focus to the right */
@@ -84,6 +113,29 @@ html {
   font-weight: 100 900; /* Range of font weights */
   font-style: normal;
   font-display: swap; /* Ensures font loads quickly */
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/font/AbrilFatface-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Playfair Display */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/font/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Variable font range */
+  font-style: normal;
+}
+
+/* Oswald */
+@font-face {
+  font-family: "Oswald";
+  src: url("/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 900; /* Variable font range */
+  font-style: normal;
 }
 
 .fade-in {

@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center scroll animate-opacity-in"
+          className="fixed inset-0 z-50 flex items-center justify-center scroll animate-opacity-in"
           onClick={onClose} // Close modal on background click
         >
           {/* Modal background animation */}

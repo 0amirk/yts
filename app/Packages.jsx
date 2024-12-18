@@ -1,9 +1,13 @@
 "use client";
 import "@splidejs/react-splide/css";
 import { MoveRight } from "lucide-react";
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Modal from "./components/dialog";
 const Packages = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => setIsOpen(false);
+
   useEffect(() => {
     const fadeIns = document.querySelectorAll(".fade-in");
 
@@ -27,12 +31,13 @@ const Packages = () => {
   }, []);
   return (
     <main className="flex justify-center w-full mb-6 font-montserrat text-white/95">
-      <div className="flex flex-col bg-white shadow-lg backdrop-blur-md w-[100%] rounded-b-lg ">
+      <div className="flex flex-col w-full bg-white">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] ">
-          <p className="text-[25px] md:!text-[40px] text-[#B78738] font-mySoul md:text-lg">
-            Explore options to visit the house of ﷻ ﷲ
+          <p className="text-[25px] md:!text-[40px] text-[#B78738] font-abril  md:text-lg">
+            Explore options to visit the house of{" "}
+            <span className=""> ﷻ ﷲ </span>
           </p>
-          <p className="mt-6 md:text-[25px] text-[20px] font-semibold text-black">
+          <p className="mt-6 md:text-[25px] text-[20px] font-medium text-black font-oswald">
             Pilgrim Packages
           </p>
           <p className="text-[#303030] mt-2 max-w-5xl">
@@ -42,123 +47,148 @@ const Packages = () => {
             relaxed state of mind during the sacred journey.
           </p>
         </div>
-        <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
-          <div className="flex flex-col items-center justify-around gap-x-4 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
+        <div className="mt-4 mb-8 text-black md:mb-10 md:block">
+          <div className="flex flex-col items-center shrink md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-center h-full fade-in">
-              <div className="overflow-hidden">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+              <div className="relative w-full h-full overflow-hidden">
                 <img
-                  src="/test-hajj.jpg"
+                  src="/hajj.jpg"
                   loading="lazy"
-                  className="h-[230px] w-[320px]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
                 />
-              </div>
-              <div className="mt-2 w-full md:w-[320px] feature-box">
-                <p className="text-2xl font-semibold">
-                  Hajj{" "}
-                  <span className="text-xl font-normal text-black">2025</span>
-                </p>
-                <p className="mt-3 text-lg font-medium max-w-[300px]">
-                  The Reward For An Accepted Hajj is Paradise
-                </p>
-                <button className="mt-1 md:text-lg group">
-                  <div className="flex items-center gap-[6px]">
-                    <p>Enquire Now</p>{" "}
-                    <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
+                  <div className="w-full text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                      Hajj{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/hajj">
+                        <div className="flex items-center gap-[6px]">
+                          <p>Enquire Now</p>{" "}
+                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                        </div>
+                      </Link>
+                    </button>
                   </div>
-                </button>
+                </div>
+              </div>
+            </div>
+            {/*Second Div*/}
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+              <div className="relative w-full h-full overflow-hidden">
+                <img
+                  src="/umrah.jpg"
+                  loading="lazy"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                />
+                <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
+                  <div className="w-full text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                      Umrah{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/umrah">
+                        <div className="flex items-center gap-[6px]">
+                          <p>Enquire Now</p>{" "}
+                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                        </div>
+                      </Link>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* NEXT ROW */}
+          <div className="flex flex-col items-center shrink md:flex-row">
+            {/* THIRD DIV */}
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+              <div className="relative w-full h-full overflow-hidden">
+                <img
+                  src="/ramadan.jpg"
+                  loading="lazy"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                />
+                <div className="absolute bottom-0 w-full max-w-[280px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
+                  <div className="w-full text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                      Ramadan{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/ramadan">
+                        <div className="flex items-center gap-[6px]">
+                          <p>Enquire Now</p>{" "}
+                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                        </div>
+                      </Link>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Second Div */}
-            <div
-              className="flex flex-col items-start justify-center h-full fade-in"
-              style={{ transitionDelay: ` 0.2s` }}
-            >
-              <div className="overflow-hidden">
+            {/* FOURTH DIV */}
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[400px] md:!h-[500px] fade-in">
+              <div className="relative w-full h-full overflow-hidden">
                 <img
-                  src="/test-madina.jpg"
+                  src="/ziyarat.jpg"
                   loading="lazy"
-                  className="h-[230px] w-[320px]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
                 />
-              </div>
-              <div className="mt-2 w-full md:w-[320px] feature-box">
-                <p className="text-2xl font-semibold">
-                  Umrah{" "}
-                  <span className="text-xl font-normal text-black">2025</span>
-                </p>
-                <p className="mt-3 text-lg font-medium max-w-[300px]">
-                  Umrah Trips That Are Planned As Per Your Needs
-                </p>
-                <button className="mt-1 md:text-lg group">
-                  <div className="flex items-center gap-[6px]">
-                    <p>Enquire Now</p>{" "}
-                    <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                  </div>
-                </button>
-              </div>
-            </div>
-            {/* third div */}
-            <div
-              className="flex flex-col items-start justify-center h-full fade-in"
-              style={{ transitionDelay: ` 0.4s` }}
-            >
-              <div className="overflow-hidden">
-                <img
-                  src="/test-ramadan.jpg"
-                  loading="lazy"
-                  className="h-[230px] w-[320px]"
-                />
-              </div>
-              <div className="mt-2 w-full md:w-[320px] feature-box">
-                <p className="text-2xl font-semibold">
-                  Ramadan{" "}
-                  <span className="text-xl font-normal text-black">2025</span>
-                </p>
-                <p className="mt-3 text-lg font-medium max-w-[300px]">
-                  Curating The Best For Ramadan Umrah
-                </p>
-                <button className="mt-1 md:text-lg group">
-                  <div className="flex items-center gap-[6px]">
-                    <p>Enquire Now</p>{" "}
-                    <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                  </div>
-                </button>
-              </div>
-            </div>
+                <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
+                  <div className="w-full text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                      Ziyarat{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
 
-            {/* fourth div */}
-            <div
-              className="flex flex-col items-start justify-center h-full fade-in"
-              style={{ transitionDelay: ` 0.6s` }}
-            >
-              <div className="overflow-hidden">
-                <img
-                  src="/test-ziyarat.jpg"
-                  loading="lazy"
-                  className="h-[230px] md:w-[320px]"
-                />
-              </div>
-              <div className="mt-2 w-full md:w-[320px] feature-box">
-                <p className="text-2xl font-semibold">
-                  Ziyarat{" "}
-                  <span className="text-xl font-normal text-black">2025</span>
-                </p>
-                <p className="mt-3 text-lg font-medium max-w-[300px]">
-                  Offer Salutations And Greetings To Muhammad{" "}
-                  <span className="text-2xl"> ﷺ</span>
-                </p>
-                <button className="mt-1 md:text-lg group">
-                  <div className="flex items-center gap-[6px]">
-                    <p>Enquire Now</p>{" "}
-                    <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                    <button
+                      className="mt-1 md:text-lg group"
+                      onClick={() => setIsOpen(true)}
+                    >
+                      <div className="flex items-center gap-[6px]">
+                        <p>Enquire Now</p>{" "}
+                        <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
+                      </div>
+                    </button>
                   </div>
-                </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <Modal isOpen={isOpen} onClose={closeModal}>
+        <div className="hidden overflow-hidden rounded-lg md:block">
+          <iframe
+            width="700"
+            height="512"
+            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
+            title="Why Choose Us"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className=""
+          ></iframe>
+        </div>
+        <div className="overflow-hidden rounded-lg md:hidden">
+          <iframe
+            width="350"
+            height="300"
+            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
+            title="Why Choose Us"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Modal>
     </main>
   );
 };

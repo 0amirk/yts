@@ -15,6 +15,8 @@ export default {
         charm: ["Charm", "sans-serif"],
         mySoul: ["My-Soul", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
+        abril: ['"Abril Fatface"', "sans-serif"],
+        oswald: ['"Oswald"', "sans-serif"],
       },
       fontWeight: {
         normal: "400",
