@@ -121,8 +121,8 @@ html {
 .fade-side {
   opacity: 0; /* Hidden initially */
   transform: translateX(
-    50px
-  ); /* Starts from the right (positive X direction) */
+    -50px
+  ); /* Starts from the right (negative X direction) */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth animation */
 }
 
