@@ -53,7 +53,6 @@ const Packages = () => {
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/hajj.png"
-                  loading="lazy"
                   className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
@@ -76,7 +75,6 @@ const Packages = () => {
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/umrah.jpg"
-                  loading="lazy"
                   className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
@@ -103,7 +101,6 @@ const Packages = () => {
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ramadan.jpg"
-                  loading="lazy"
                   className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[280px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
@@ -127,7 +124,6 @@ const Packages = () => {
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ziyarat.jpg"
-                  loading="lazy"
                   className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">

@@ -53,11 +53,6 @@ html {
   background-attachment: fixed; /* Enables parallax scrolling */
 }
 
-.show-color {
-  filter: grayscale(0); /* Removes grayscale */
-  transition: filter 0.7s ease-in-out;
-}
-
 @media (max-width: 768px) {
   .catalyst-bg {
     background-position: 60%; /* Adjust focus to the right */
@@ -113,7 +108,7 @@ html {
 
 .show-color {
   filter: grayscale(100%);
-  transition: filter 0s ease-out;
+  transition: filter 0.8s ease-out;
 }
 
 .show-color.show {
