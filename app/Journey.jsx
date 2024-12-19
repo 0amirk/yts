@@ -1,8 +1,30 @@
 "use client";
-import "@splidejs/react-splide/css";
 import { PhoneOutgoing } from "lucide-react";
+import { useEffect } from "react";
 
 const Journey = () => {
+  useEffect(() => {
+    const showColor = document.querySelectorAll(".show-color");
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.4, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    showColor.forEach((showColor) => observer.observe(showColor));
+
+    // Cleanup the observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main className="flex items-center justify-center w-full px-6 pt-12 xl:px-24 md:py-16 font-montserrat">
       <div className="flex flex-col items-center justify-center max-w-[2000px]">
@@ -34,7 +56,7 @@ const Journey = () => {
             <div className="h-[400px] md:h-[500px]">
               <img
                 src="/journey.jpg"
-                className="relative w-full h-full transition-all duration-500 ease-in-out filter grayscale group-hover:grayscale-0"
+                className="relative w-full h-full transition-all duration-500 ease-in-out show-color"
               />
               <div className="absolute top-[2%] right-[2%] hover:scale-95 hover:opacity-80 opacity-90 duration-300 ease-in-out px-5 py-3 bg-white">
                 <a

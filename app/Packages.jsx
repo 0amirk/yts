@@ -1,6 +1,5 @@
 "use client";
 import "@splidejs/react-splide/css";
-import { MoveRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Modal from "./components/dialog";
@@ -53,22 +52,19 @@ const Packages = () => {
             <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
-                  src="/hajj.jpg"
+                  src="/hajj.png"
                   loading="lazy"
-                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
                   <div className="w-full text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                    <p className="text-[30px] md:text-[35px] font-abril">
                       Hajj{" "}
                       <span className="md:text-[30px] font-normal">2025</span>
                     </p>
                     <button className="mt-1 md:text-lg group">
                       <Link href="/hajj">
-                        <div className="flex items-center gap-[6px]">
-                          <p>Enquire Now</p>{" "}
-                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                        </div>
+                        <p className="font-bold">Enquire Now</p>
                       </Link>
                     </button>
                   </div>
@@ -81,20 +77,17 @@ const Packages = () => {
                 <img
                   src="/umrah.jpg"
                   loading="lazy"
-                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
                   <div className="w-full text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                    <p className="text-[30px] md:text-[35px] font-abril">
                       Umrah{" "}
                       <span className="md:text-[30px] font-normal">2025</span>
                     </p>
                     <button className="mt-1 md:text-lg group">
                       <Link href="/umrah">
-                        <div className="flex items-center gap-[6px]">
-                          <p>Enquire Now</p>{" "}
-                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                        </div>
+                        <p className="font-bold">Enquire Now</p>{" "}
                       </Link>
                     </button>
                   </div>
@@ -111,20 +104,17 @@ const Packages = () => {
                 <img
                   src="/ramadan.jpg"
                   loading="lazy"
-                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[280px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
                   <div className="w-full text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                    <p className="text-[30px] md:text-[35px] font-abril">
                       Ramadan{" "}
                       <span className="md:text-[30px] font-normal">2025</span>
                     </p>
                     <button className="mt-1 md:text-lg group">
                       <Link href="/ramadan">
-                        <div className="flex items-center gap-[6px]">
-                          <p>Enquire Now</p>{" "}
-                          <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                        </div>
+                        <p className="font-bold">Enquire Now</p>
                       </Link>
                     </button>
                   </div>
@@ -138,11 +128,11 @@ const Packages = () => {
                 <img
                   src="/ziyarat.jpg"
                   loading="lazy"
-                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                  className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
                   <div className="w-full text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-semibold font-oswald">
+                    <p className="text-[30px] md:text-[35px] font-abril">
                       Ziyarat{" "}
                       <span className="md:text-[30px] font-normal">2025</span>
                     </p>
@@ -151,10 +141,7 @@ const Packages = () => {
                       className="mt-1 md:text-lg group"
                       onClick={() => setIsOpen(true)}
                     >
-                      <div className="flex items-center gap-[6px]">
-                        <p>Enquire Now</p>{" "}
-                        <MoveRight className="mt-1 duration-200 group-hover:translate-x-1" />
-                      </div>
+                      <p className="font-bold">Enquire Now</p>
                     </button>
                   </div>
                 </div>

@@ -53,6 +53,11 @@ html {
   background-attachment: fixed; /* Enables parallax scrolling */
 }
 
+.show-color {
+  filter: grayscale(0); /* Removes grayscale */
+  transition: filter 0.7s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .catalyst-bg {
     background-position: 60%; /* Adjust focus to the right */
@@ -104,6 +109,15 @@ html {
 .fade-side.show {
   opacity: 1; /* Fully visible */
   transform: translateX(0); /* Moves to its original position */
+}
+
+.show-color {
+  filter: grayscale(100%);
+  transition: filter 0s ease-out;
+}
+
+.show-color.show {
+  filter: grayscale(0);
 }
 
 .precautions-opacity {
