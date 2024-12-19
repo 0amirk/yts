@@ -121,7 +121,11 @@ export default function Navbar() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <img className="w-[170px]" src="/travele-logo.png" alt="Logo" />
+              <img
+                className="w-[170px] xl:w-[200px]"
+                src="/travele-logo.png"
+                alt="Logo"
+              />
             </Link>
 
             {/* Desktop Navigation */}

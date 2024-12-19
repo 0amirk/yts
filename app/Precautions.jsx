@@ -55,23 +55,25 @@ const Precautions = () => {
             Some of the most important points to consider while perfoming
             Umrah/Hajj, keeping in mind the most recent pandemic.
           </p>
-          <div className="flex flex-wrap items-center justify-around w-full gap-4">
-            {CARDS.map((card, index) => {
-              return (
-                <div
-                  className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[280px] items-center justify-center rounded-lg group"
-                  key={index}
-                  style={{ transitionDelay: ` ${index * 0.3}s` }}
-                >
-                  <div className="flex items-center justify-center w-20 h-20 md:w-32 md:h-32">
-                    <img src={card.img} />
+          <div className="flex justify-center max-w-[2000px]">
+            <div className="flex flex-wrap items-center justify-around w-full gap-4">
+              {CARDS.map((card, index) => {
+                return (
+                  <div
+                    className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[280px] items-center justify-center rounded-lg group"
+                    key={index}
+                    style={{ transitionDelay: ` ${index * 0.3}s` }}
+                  >
+                    <div className="flex items-center justify-center w-20 h-20 md:w-32 md:h-32">
+                      <img src={card.img} />
+                    </div>
+                    <p className="text-sm md:text-lg text-[#303030] max-w-[250px] group-hover:text-[#b78738] transition-all duration-300">
+                      {card.text}
+                    </p>
                   </div>
-                  <p className="text-sm md:text-lg text-[#303030] max-w-[250px] group-hover:text-[#b78738] transition-all duration-300">
-                    {card.text}
-                  </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

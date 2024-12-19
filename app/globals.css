@@ -48,7 +48,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh; /* Full viewport height */
+  height: 500px; /* Full viewport height */
   position: relative;
   background-attachment: fixed; /* Enables parallax scrolling */
 }
@@ -70,21 +70,6 @@ html {
 }
 
 @font-face {
-  font-family: "Charm";
-  src: url("/font/Charm-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Bold weight font (700) */
-@font-face {
-  font-family: "Charm";
-  src: url("/font/Charm-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Montserrat";
   src: url("/font/Montserrat-VariableFont.ttf") format("truetype");
   font-weight: 100 900; /* Range of font weights */
@@ -98,14 +83,6 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-
-/* Oswald */
-/* @font-face {
-  font-family: "Oswald";
-  src: url("/font/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-  font-weight: 200 900; 
-  font-style: normal;
-} */
 
 .fade-in {
   opacity: 0; /* Hidden initially */

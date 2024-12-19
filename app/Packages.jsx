@@ -37,7 +37,7 @@ const Packages = () => {
             Explore options to visit the house of{" "}
             <span className=""> ﷻ ﷲ </span>
           </p>
-          <p className="mt-6 md:text-[25px] text-[20px] font-medium text-black font-semibold">
+          <p className="mt-6 md:text-[25px] text-[20px] text-black font-semibold">
             Pilgrim Packages
           </p>
           <p className="text-[#303030] mt-2 max-w-5xl">
@@ -48,9 +48,9 @@ const Packages = () => {
           </p>
         </div>
         <div className="mt-4 text-black md:block">
-          <div className="flex flex-col items-center shrink md:flex-row">
+          <div className="flex flex-col items-center justify-center px-6 xl:px-24 shrink md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/hajj.jpg"
@@ -76,7 +76,7 @@ const Packages = () => {
               </div>
             </div>
             {/*Second Div*/}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/umrah.jpg"
@@ -104,9 +104,9 @@ const Packages = () => {
           </div>
 
           {/* NEXT ROW */}
-          <div className="flex flex-col items-center shrink md:flex-row">
+          <div className="flex flex-col items-center justify-center px-6 xl:px-24 shrink md:flex-row ">
             {/* THIRD DIV */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ramadan.jpg"
@@ -133,7 +133,7 @@ const Packages = () => {
             </div>
 
             {/* FOURTH DIV */}
-            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[500px] fade-in">
+            <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
                   src="/ziyarat.jpg"

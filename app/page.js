@@ -19,7 +19,7 @@ export default function Home() {
       <Journey />
       <ChooseUs />
       <Precautions />
-      <Awards />
+      {/* <Awards />  */}
       <Catalyst />
       <Blogs />
       <Accred />

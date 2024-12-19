@@ -7,7 +7,7 @@ const Blogs = () => {
 
     const observerOptions = {
       root: null, // Use the viewport
-      threshold: 0.7, // Trigger when 70% of the element is visible
+      threshold: 0.5, // Trigger when 70% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
