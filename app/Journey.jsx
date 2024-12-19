@@ -8,7 +8,7 @@ const Journey = () => {
 
     const observerOptions = {
       root: null, // Use the viewport
-      threshold: 0.4, // Trigger when 10% of the element is visible
+      threshold: 0.7, // Trigger when 70% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
