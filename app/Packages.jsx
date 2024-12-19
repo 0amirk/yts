@@ -74,7 +74,7 @@ const Packages = () => {
             <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
               <div className="relative w-full h-full overflow-hidden">
                 <img
-                  src="/umrah.jpg"
+                  src="/umrah.webp"
                   className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
                 />
                 <div className="absolute bottom-0 w-full max-w-[250px] p-2 mb-2 ml-2 md:mb-4 md:ml-4 bg-black/50">
