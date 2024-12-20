@@ -60,7 +60,7 @@ const Precautions = () => {
               {CARDS.map((card, index) => {
                 return (
                   <div
-                    className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[280px] items-center justify-center rounded-lg group"
+                    className="flex flex-col shadow-lg px-4 py-8 h-64 precautions-opacity max-w-[150px] sm:max-w-[250px] md:max-w-[280px] items-center justify-center group"
                     key={index}
                     style={{ transitionDelay: ` ${index * 0.3}s` }}
                   >

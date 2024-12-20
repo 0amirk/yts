@@ -7,7 +7,7 @@ const Blogs = () => {
 
     const observerOptions = {
       root: null, // Use the viewport
-      threshold: 0.3, // Trigger when 30% of the element is visible
+      threshold: 0.1, // Trigger when 10% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -40,70 +40,95 @@ const Blogs = () => {
           </p>
         </div>
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
-          <div className="flex flex-col items-center justify-center gap-x-12 gap-y-4 md:gap-y-8 md:flex-wrap md:flex-row">
+          <div className="flex flex-col items-center justify-center gap-y-2 gap-x-2 md:gap-y-2 md:flex-wrap md:flex-row">
             {/* First Div */}
-            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
+            <div className="flex flex-col items-start justify-center h-full overflow-hidden group precautions-opacity">
               <Link href="/blog1">
-                <div className="overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
                     src="/blog1.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px]"
+                    className="h-[600px] w-[350px]"
                   />
+                  <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
                 </div>
-                <div className="px-4 pb-8">
+                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
                   <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-base font-normal text-black/80">
+                    <span className="text-lg font-normal text-white/90">
                       17th August, 2021
                     </span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold  max-w-[300px]">
+                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
                     Guide For First Time Pilgrims Part 1
                   </p>
                 </div>
               </Link>
             </div>
 
-            {/* Second Div */}
-            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
+            <div className="flex flex-col items-start justify-center h-full overflow-hidden group precautions-opacity">
               <Link href="/blog2">
-                <div className="overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
                     src="/blog2.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px]"
+                    className="h-[600px] w-[350px]"
                   />
+                  <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
                 </div>
-                <div className="px-4 pb-8">
+                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
                   <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-base font-normal text-black/80">
+                    <span className="text-lg font-normal text-white/80">
                       17th August, 2021
                     </span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold  max-w-[300px]">
+                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
                     Guide For First Time Pilgrims Part 2
                   </p>
                 </div>
               </Link>
             </div>
-            {/* third div */}
-            <div className="flex flex-col items-start justify-center h-full shadow-lg precautions-opacity">
+
+            <div className="flex flex-col items-start justify-center h-full overflow-hidden group precautions-opacity">
               <Link href="/blog3">
-                <div className="overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
                     src="/blog3.jpg"
                     loading="lazy"
-                    className="h-[300px] w-[340px]"
+                    className="h-[600px] w-[350px]"
                   />
+                  <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
                 </div>
-                <div className="px-4 pb-8">
+                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
                   <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-base font-normal text-black/80">
+                    <span className="text-lg font-normal text-white/80">
                       17th August, 2021
                     </span>
                   </p>
-                  <p className="mt-3 text-lg font-semibold  max-w-[300px]">
+                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
                     Guide For First Time Pilgrims Part 3
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            <div className="flex flex-col items-start justify-center h-full overflow-hidden group precautions-opacity">
+              <Link href="/blog4">
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/blog4.jpg"
+                    loading="lazy"
+                    className="h-[600px] w-[350px]"
+                  />
+                  <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
+                </div>
+                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
+                  <p className="text-3xl text-[#B78738] font-abril">
+                    <span className="text-lg font-normal text-white/80">
+                      17th August, 2021
+                    </span>
+                  </p>
+                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
+                    Guide For First Time Pilgrims Part 4
                   </p>
                 </div>
               </Link>

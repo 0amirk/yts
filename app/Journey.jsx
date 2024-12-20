@@ -26,7 +26,7 @@ const Journey = () => {
   }, []);
 
   return (
-    <main className="flex items-center justify-center w-full px-6 pt-12 xl:px-24 md:py-16 font-montserrat">
+    <main className="flex items-center justify-center w-full px-6 py-12 xl:px-24 md:py-16 font-montserrat">
       <div className="flex flex-col items-center justify-center max-w-[2000px]">
         <p className="text-[38px] sm:text-[45px] md:text-[50px] text-center font-abril text-[#B78738] md:mb-8">
           Plan Your Spiritual Journey With Us
