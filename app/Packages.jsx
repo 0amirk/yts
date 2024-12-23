@@ -148,28 +148,35 @@ const Packages = () => {
       </div>
 
       <Modal isOpen={isOpen} onClose={closeModal}>
-        <div className="hidden overflow-hidden rounded-lg md:block">
-          <iframe
-            width="700"
-            height="512"
-            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
-            title="Why Choose Us"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className=""
-          ></iframe>
-        </div>
-        <div className="overflow-hidden rounded-lg md:hidden">
-          <iframe
-            width="350"
-            height="300"
-            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
-            title="Why Choose Us"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div className="w-full overflow-hidden text-center text-black rounded-lg font-montserrat">
+          <p className="text-2xl font-bold">Stay Updated</p>
+          <form className="w-full mt-4 mb-4">
+            <div className="flex flex-col gap-3 md:flex-row">
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+              <input
+                type="text"
+                placeholder="Email Address"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+              <input
+                type="text"
+                placeholder="Mobile Number"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+            </div>
+            <textarea
+              type="text"
+              placeholder="Enter Your Message"
+              className="w-full px-3 py-1 mt-4 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+            />
+            <button className="border-[#B78738] text-[#B78738] border font-medium md:text-xl px-5 py-1 mt-4">
+              Submit
+            </button>
+          </form>
         </div>
       </Modal>
     </main>
