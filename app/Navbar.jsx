@@ -75,7 +75,17 @@
 // }
 "use client";
 
-import { Menu, X } from "lucide-react";
+import {
+  Copyright,
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Menu,
+  Phone,
+  X,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -113,10 +123,40 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex justify-center w-full transition-colors duration-500 ${
+      className={`fixed top-0 z-50 flex flex-col justify-center w-full transition-colors duration-500 ${
         hasScrolled ? "bg-black" : "bg-transparent"
       }`}
     >
+      <div
+        className={`text-3xl text-white  ${hasScrolled ? "hidden" : "block"}`}
+      >
+        <div className="flex items-center font-montserrat  flex-wrap  justify-around gap-4 py-1 text-[12px] text-white bg-black">
+          <div className="flex gap-4">
+            <a
+              href="mailto:hello@yourtravelshop.com"
+              className="items-center hidden gap-1 sm:flex"
+            >
+              <Mail className="w-3 h-3 md:w-4 md:h-4" />
+              hello@yourtravelshop.com
+            </a>
+
+            <a href="tel:02085547070" className="flex items-center gap-1">
+              <Phone className="w-4 h-4" />
+              020 8554 7070
+            </a>
+            <p className="items-center hidden gap-1 sm:flex">
+              <MapPin className="w-3 h-3 md:w-4 md:h-4" />
+              96 Thorold Road, Ilford, London, IG1 4EX
+            </p>
+          </div>
+
+          <div className="flex items-center justify-end gap-3">
+            <Facebook className="w-5 h-5" />
+            <Youtube className="w-5 h-5" />
+            <Instagram className="w-5 h-5" />
+          </div>
+        </div>
+      </div>
       <div className="w-full">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -140,6 +180,9 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+            <button className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white/80   hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] md:px-5 px-3 py-1">
+              Book Now
+            </button>
 
             {/* Mobile Navigation Button */}
             <button

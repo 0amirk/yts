@@ -22,9 +22,6 @@ const Hero = () => {
                 <span className=" text-[25px] mr-1 font-montserrat">ﷻ ﷲ</span>{" "}
                 will help you to achieve all that you desire
               </p>
-              <button className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white/80   hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] px-5 py-1 mt-6">
-                Book Now
-              </button>
             </div>
           </div>
         </div>
