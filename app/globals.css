@@ -16,9 +16,9 @@ html {
 }
 
 .hero-bg {
-  background-image: url("/man-praying-up-bw.png");
+  background-image: url("/hero.webp");
   background-size: cover;
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -54,7 +54,7 @@ html {
 }
 
 .pack-bg {
-  background-image: url("/test6.jpg");
+  background-image: url("/pack-bg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +62,33 @@ html {
   position: relative;
   background-attachment: fixed; /* Enables parallax scrolling */
 }
-
+.pack2-bg {
+  background-image: url("/test3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
+}
+.pack3-bg {
+  background-image: url("/pack-bg3.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: auto; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
+}
+.pack4-bg {
+  background-image: url("/pack-bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto; /* Full viewport height */
+  position: relative;
+  background-attachment: fixed; /* Enables parallax scrolling */
+}
 @media (max-width: 768px) {
   .catalyst-bg {
     background-position: 60%; /* Adjust focus to the right */
@@ -72,12 +98,15 @@ html {
     background-attachment: scroll; /* Disable parallax on smaller screens */
   }
   .hero-bg {
-    background-position: 25%;
+    background-position: 35%;
   }
   .chooseUs-bg {
     background-attachment: scroll;
   }
   .pack-bg {
+    background-attachment: scroll;
+  }
+  .pack3-bg {
     background-attachment: scroll;
   }
 }
@@ -161,7 +190,7 @@ html {
 .feature-box span::after {
   content: "";
   position: absolute;
-  background-color: var(--base-color, #b78738); /* Border color */
+  background-color: var(--base-color, #b78738) !important; /* Border color */
   z-index: 1;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -41,7 +41,7 @@ const Precautions = () => {
     {
       id: 3,
       img: "/mask.png",
-      text: "Dispose of used masks and tissues properly and regularly.",
+      text: "Dispose of used masks and tissues properly and regularly",
     },
   ];
   return (

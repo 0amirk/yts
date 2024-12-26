@@ -47,12 +47,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 flex flex-col justify-center w-full transition-colors duration-500 ${
-        hasScrolled ? "bg-black" : "bg-transparent"
-      }`}
+      className={`fixed top-0 z-50 flex flex-col bg-black justify-center w-full transition-colors duration-500 `}
     >
       <div
-        className={`absolute w-full top-0 transition-all text-3xl duration-500 ease-in-out ${
+        className={`absolute border-b-[1px] border-white/50 w-full top-0 transition-all text-2xl duration-500 ease-in-out ${
           hasScrolled
             ? "opacity-0 transform -translate-y-4"
             : "opacity-100 transform translate-y-0"

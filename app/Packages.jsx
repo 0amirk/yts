@@ -47,113 +47,115 @@ const Packages = () => {
           </p>
         </div>
         <div className="w-full h-full px-6 xl:px-24">
-          <div className="w-full mt-4 text-black md:block pack-bg">
-            {/* FIRST */}
-            <div className="flex flex-col items-center justify-center shrink md:flex-row">
-              <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img
-                    src="/ramadan.jpg"
-                    className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
-                  />
+          <div className="flex justify-center w-full mt-4 text-black">
+            <div className="max-w-[2500] pack3-bg">
+              {/* FIRST */}
+              <div className="flex flex-col items-center justify-center shrink md:flex-row">
+                <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
+                  <div className="relative w-full h-full overflow-hidden">
+                    <img
+                      src="/ramadan.jpg"
+                      className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full text-white md:w-1/2">
+                  <div className="text-center text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-abril">
+                      Ramadan{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <p className="text-sm md:text-xl">
+                      Curating The Best For Ramadan Umrah
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/ramadan">
+                        <p className="font-bold">Enquire Now</p>
+                      </Link>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
-                <div className="text-center text-white feature-box">
-                  <p className="text-[30px] md:text-[35px] font-abril">
-                    Ramadan{" "}
-                    <span className="md:text-[30px] font-normal">2025</span>
-                  </p>
-                  <p className="text-sm md:text-xl">
-                    Curating The Best For Ramadan Umrah
-                  </p>
-                  <button className="mt-1 md:text-lg group">
-                    <Link href="/ramadan">
-                      <p className="font-bold">Enquire Now</p>
-                    </Link>
-                  </button>
+              {/* Second */}
+              <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
+                <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
+                  <div className="relative w-full h-full overflow-hidden">
+                    <img
+                      src="/umrah.webp"
+                      className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center  !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-center text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-abril">
+                      Umrah{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <p className="text-sm md:text-xl">
+                      Umrah Trips planned as per your needs
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/umrah">
+                        <p className="font-bold">Enquire Now</p>
+                      </Link>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Second */}
-            <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
-              <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img
-                    src="/umrah.webp"
-                    className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
-                  />
+              {/* Third */}
+              <div className="flex flex-col items-center justify-center shrink md:flex-row">
+                <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
+                  <div className="relative w-full h-full overflow-hidden">
+                    <img
+                      src="/hajj.png"
+                      className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                    />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-center text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-abril">
+                      Hajj{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <p className="text-sm md:text-xl">
+                      The Reward For An Accepted Hajj Is Paradise
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <Link href="/hajj">
+                        <p className="font-bold">Enquire Now</p>
+                      </Link>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
-                <div className="text-center text-white feature-box">
-                  <p className="text-[30px] md:text-[35px] font-abril">
-                    Umrah{" "}
-                    <span className="md:text-[30px] font-normal">2025</span>
-                  </p>
-                  <p className="text-sm md:text-xl">
-                    Umrah Trips planned as per your needs
-                  </p>
-                  <button className="mt-1 md:text-lg group">
-                    <Link href="/umrah">
-                      <p className="font-bold">Enquire Now</p>
-                    </Link>
-                  </button>
+              {/* Fourth*/}
+              <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
+                <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px]  xl:!h-[500px] max-w-[1000px] fade-in">
+                  <div className="relative w-full h-full overflow-hidden">
+                    <img
+                      src="/ziyarat.webp"
+                      className="w-full h-full duration-500 ease-in-out hover:scale-[140%]"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            {/* Third */}
-            <div className="flex flex-col items-center justify-center shrink md:flex-row">
-              <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img
-                    src="/hajj.png"
-                    className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
-                <div className="text-center text-white feature-box">
-                  <p className="text-[30px] md:text-[35px] font-abril">
-                    Hajj{" "}
-                    <span className="md:text-[30px] font-normal">2025</span>
-                  </p>
-                  <p className="text-sm md:text-xl">
-                    The Reward For An Accepted Hajj Is Paradise
-                  </p>
-                  <button className="mt-1 md:text-lg group">
-                    <Link href="/hajj">
-                      <p className="font-bold">Enquire Now</p>
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/* Fourth*/}
-            <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
-              <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
-                <div className="relative w-full h-full overflow-hidden">
-                  <img
-                    src="/ziyarat.webp"
-                    className="w-full h-full duration-500 ease-in-out hover:scale-[140%] hover:grayscale-0 filter grayscale"
-                  />
-                </div>
-              </div>
-              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
-                <div className="text-center text-white feature-box">
-                  <p className="text-[30px] md:text-[35px] font-abril">
-                    Ziyarat{" "}
-                    <span className="md:text-[30px] font-normal">2025</span>
-                  </p>
-                  <p className="text-sm md:text-xl">
-                    Offer Salutations And Greetings To Muhammad{" "}
-                    <span className="text-base md:text-2xl"> ﷺ. </span>
-                  </p>
-                  <button className="mt-1 md:text-lg group">
-                    <div onClick={setIsOpen}>
-                      <p className="font-bold">Enquire Now</p>
-                    </div>
-                  </button>
+                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-center text-white feature-box">
+                    <p className="text-[30px] md:text-[35px] font-abril">
+                      Ziyarat{" "}
+                      <span className="md:text-[30px] font-normal">2025</span>
+                    </p>
+                    <p className="text-sm md:text-xl">
+                      Offer Salutations And Greetings To Muhammad{" "}
+                      <span className="text-base md:text-2xl"> ﷺ. </span>
+                    </p>
+                    <button className="mt-1 md:text-lg group">
+                      <div onClick={setIsOpen}>
+                        <p className="font-bold">Enquire Now</p>
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

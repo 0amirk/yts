@@ -35,7 +35,7 @@ const Catalyst = () => {
     <main>
       <div className="relative flex flex-col items-start justify-center gap-12 bg-gray-200/30 font-montserrat md:flex-row-reverse md:items-center">
         <div className="md:w-[70%] max-w-[1000px]">
-          <img src="/catalyst.jpg" />
+          <img src="/catalyst.webp" />
         </div>
         <div className="px-4 py-6 text-black md:mt-12 fade-side">
           <p className="text-[30px] md:text-[35px] font-abril">
