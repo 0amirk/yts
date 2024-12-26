@@ -185,7 +185,7 @@ const Packages = () => {
             <textarea
               type="text"
               placeholder="Enter Your Message"
-              className="w-full px-3 py-1 mt-4 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              className="w-full px-3 py-1 mt-4 bg-transparent border border-gray-400 hide-scrollbar focus:outline-none focus:ring-0"
             />
             <button className="border-[#B78738] text-[#B78738] border font-medium md:text-xl px-5 py-1 mt-4">
               Submit

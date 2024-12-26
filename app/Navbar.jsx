@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Copyright,
   Facebook,
   Instagram,
   Mail,
@@ -84,19 +83,19 @@ export default function Navbar() {
               target="_blank"
               href="https://www.facebook.com/Yourtravelshopcom/"
             >
-              <Facebook className="w-5 h-5" />
+              <Facebook className="w-5 h-5 transition-all duration-300 ease-in-out hover:stroke-[#007bff]/70" />
             </a>
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UC_1TAfW_CNhbkr5VCA1ypsQ"
             >
-              <Youtube className="w-5 h-5" />
+              <Youtube className="w-5 h-5 transition-all duration-300 ease-in-out hover:stroke-[#007bff]/70" />
             </a>
             <a
               href="https://www.instagram.com/accounts/login/?next=/yourtravelshop/"
               target="_blank"
             >
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-5 h-5 transition-all duration-300 ease-in-out hover:stroke-[#007bff]/70" />
             </a>
           </div>
         </div>
