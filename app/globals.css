@@ -54,7 +54,7 @@ html {
 }
 
 .pack-bg {
-  background-image: url("/test4.jpg");
+  background-image: url("/test6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,6 +75,9 @@ html {
     background-position: 25%;
   }
   .chooseUs-bg {
+    background-attachment: scroll;
+  }
+  .pack-bg {
     background-attachment: scroll;
   }
 }

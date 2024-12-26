@@ -58,7 +58,7 @@ const Packages = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-center text-white md:w-1/2">
+              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
                 <div className="text-center text-white feature-box">
                   <p className="text-[30px] md:text-[35px] font-abril">
                     Ramadan{" "}
@@ -76,7 +76,7 @@ const Packages = () => {
               </div>
             </div>
             {/* Second */}
-            <div className="flex flex-col items-center justify-center mt-2 md:mt-0 shrink md:flex-row-reverse">
+            <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
               <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
                 <div className="relative w-full h-full overflow-hidden">
                   <img
@@ -85,7 +85,7 @@ const Packages = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-center text-white md:w-1/2">
+              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
                 <div className="text-center text-white feature-box">
                   <p className="text-[30px] md:text-[35px] font-abril">
                     Umrah{" "}
@@ -103,7 +103,7 @@ const Packages = () => {
               </div>
             </div>
             {/* Third */}
-            <div className="flex flex-col items-center justify-center mt-2 md:mt-0 shrink md:flex-row">
+            <div className="flex flex-col items-center justify-center shrink md:flex-row">
               <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
                 <div className="relative w-full h-full overflow-hidden">
                   <img
@@ -112,7 +112,7 @@ const Packages = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-center text-white md:w-1/2">
+              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
                 <div className="text-center text-white feature-box">
                   <p className="text-[30px] md:text-[35px] font-abril">
                     Hajj{" "}
@@ -130,7 +130,7 @@ const Packages = () => {
               </div>
             </div>
             {/* Fourth*/}
-            <div className="flex flex-col items-center justify-center mt-2 md:mt-0 shrink md:flex-row-reverse">
+            <div className="flex flex-col items-center justify-center shrink md:flex-row-reverse">
               <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">
                 <div className="relative w-full h-full overflow-hidden">
                   <img
@@ -139,7 +139,7 @@ const Packages = () => {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-center text-white md:w-1/2">
+              <div className="flex items-center justify-center my-3 text-white md:my-0 md:w-1/2">
                 <div className="text-center text-white feature-box">
                   <p className="text-[30px] md:text-[35px] font-abril">
                     Ziyarat{" "}

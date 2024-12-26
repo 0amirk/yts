@@ -1,78 +1,3 @@
-// "use client";
-
-// import { Menu, X } from "lucide-react";
-// import Link from "next/link";
-// import { useState } from "react";
-
-// export default function Navbar() {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const navItems = [
-//     { label: "About", href: "/about" },
-//     { label: "Hajj", href: "/hajj" },
-//     { label: "Umrah", href: "/umrah" },
-//     { label: "Ziyarat", href: "/ziyarat" },
-//     { label: "FAQ", href: "/faq" },
-//     { label: "Contact Us", href: "/contact" },
-//   ];
-
-//   return (
-//     <nav className="fixed top-0 z-50 flex justify-center w-full bg-transparent font-montserrat">
-//       <div className="bg-transparent w-[100%]">
-//         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-//           <div className="flex items-center justify-between h-16">
-//             <Link href="/" className="flex items-center space-x-2">
-//               <img className="w-[170px]" src="/travele-logo.png" />
-//             </Link>
-
-//             {/* Desktop Navigation */}
-//             <div className="hidden space-x-8 md:flex">
-//               {navItems.map((item) => (
-//                 <Link
-//                   key={item.href}
-//                   href={item.href}
-//                   className="transition-colors text-white/80 hover:text-white"
-//                 >
-//                   {item.label}
-//                 </Link>
-//               ))}
-//             </div>
-
-//             {/* Mobile Navigation Button */}
-//             <button
-//               className="md:hidden"
-//               onClick={() => setIsMenuOpen(!isMenuOpen)}
-//             >
-//               {isMenuOpen ? (
-//                 <X className="stroke-white/95" size={24} />
-//               ) : (
-//                 <Menu className="stroke-white/95" size={24} />
-//               )}
-//             </button>
-//           </div>
-
-//           {/* Mobile Navigation Menu */}
-//           {isMenuOpen && (
-//             <div className="md:hidden">
-//               <div className="px-2 pt-2 pb-3 space-y-1">
-//                 {navItems.map((item) => (
-//                   <Link
-//                     key={item.href}
-//                     href={item.href}
-//                     className="block px-3 py-2 transition-colors text-white/95 hover:text-primary"
-//                     onClick={() => setIsMenuOpen(false)}
-//                   >
-//                     {item.label}
-//                   </Link>
-//                 ))}
-//               </div>
-//             </div>
-//           )}
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
 "use client";
 
 import {
@@ -128,7 +53,11 @@ export default function Navbar() {
       }`}
     >
       <div
-        className={`text-3xl text-white  ${hasScrolled ? "hidden" : "block"}`}
+        className={`absolute w-full top-0 transition-all text-3xl duration-500 ease-in-out ${
+          hasScrolled
+            ? "opacity-0 transform -translate-y-4"
+            : "opacity-100 transform translate-y-0"
+        }`}
       >
         <div className="flex items-center font-montserrat  flex-wrap  justify-around gap-4 py-1 text-[12px] text-white bg-black">
           <div className="flex gap-4">
@@ -151,13 +80,32 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center justify-end gap-3">
-            <Facebook className="w-5 h-5" />
-            <Youtube className="w-5 h-5" />
-            <Instagram className="w-5 h-5" />
+            <a
+              target="_blank"
+              href="https://www.facebook.com/Yourtravelshopcom/"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UC_1TAfW_CNhbkr5VCA1ypsQ"
+            >
+              <Youtube className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/accounts/login/?next=/yourtravelshop/"
+              target="_blank"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div
+        className={`w-full transition-all duration-500 ease-in-out ${
+          hasScrolled ? "mt-0" : "mt-10"
+        }`}
+      >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center space-x-2">
