@@ -51,7 +51,7 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                  <div className="absolute bottom-0 z-0 px-4 pb-4 text-white">
                     <p className="text-3xl text-[#B78738] font-abril">
                       <span className="text-lg font-normal text-white/90">
                         17th August, 2021
@@ -74,7 +74,7 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                  <div className="absolute bottom-0 z-0 px-4 pb-4 text-white">
                     <p className="text-3xl text-[#B78738] font-abril">
                       <span className="text-lg font-normal text-white/80">
                         17th August, 2021
@@ -97,7 +97,7 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                  <div className="absolute bottom-0 z-0 px-4 pb-4 text-white">
                     <p className="text-3xl text-[#B78738] font-abril">
                       <span className="text-lg font-normal text-white/80">
                         17th August, 2021
@@ -120,7 +120,7 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                  <div className="absolute bottom-0 z-0 px-4 pb-4 text-white">
                     <p className="text-3xl text-[#B78738] font-abril">
                       <span className="text-lg font-normal text-white/80">
                         17th August, 2021
