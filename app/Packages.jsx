@@ -59,11 +59,13 @@ const Packages = () => {
                     />
                   </div>
                 </div>
-                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full text-white md:w-1/2">
-                  <div className="text-center text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-abril">
+                <div className="flex items-center justify-center max-w-[280px] !h-[300px] md:!h-[400px] xl:!h-[500px] md:max-w-[1000px] w-full text-white md:w-1/2">
+                  <div className="text-white feature-box">
+                    <p className="text-[35px] md:text-[50px] font-abril">
                       Ramadan{" "}
-                      <span className="md:text-[30px] font-normal">2025</span>
+                      <span className="text-[25px] md:text-[40px] font-normal">
+                        2025
+                      </span>
                     </p>
                     <p className="text-sm md:text-xl">
                       Curating The Best For Ramadan Umrah
@@ -86,11 +88,13 @@ const Packages = () => {
                     />
                   </div>
                 </div>
-                <div className="flex items-center justify-center  !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
-                  <div className="text-center text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-abril">
+                <div className="flex items-center justify-center  !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[280px] md:max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-white text-start md:text-end feature-box">
+                    <p className="text-[35px] md:text-[50px] font-abril">
                       Umrah{" "}
-                      <span className="md:text-[30px] font-normal">2025</span>
+                      <span className="text-[25px] md:text-[40px] font-normal">
+                        2025
+                      </span>
                     </p>
                     <p className="text-sm md:text-xl">
                       Umrah Trips planned as per your needs
@@ -113,11 +117,13 @@ const Packages = () => {
                     />
                   </div>
                 </div>
-                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
-                  <div className="text-center text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-abril">
+                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[280px] md:max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-white feature-box">
+                    <p className="text-[35px] md:text-[50px] font-abril">
                       Hajj{" "}
-                      <span className="md:text-[30px] font-normal">2025</span>
+                      <span className="text-[25px] md:text-[40px] font-normal">
+                        2025
+                      </span>
                     </p>
                     <p className="text-sm md:text-xl">
                       The Reward For An Accepted Hajj Is Paradise
@@ -140,11 +146,13 @@ const Packages = () => {
                     />
                   </div>
                 </div>
-                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] w-full  text-white  md:w-1/2">
-                  <div className="text-center text-white feature-box">
-                    <p className="text-[30px] md:text-[35px] font-abril">
+                <div className="flex items-center justify-center !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[280px] md:max-w-[1000px] w-full  text-white  md:w-1/2">
+                  <div className="text-white md:text-end feature-box">
+                    <p className="text-[35px] md:text-[50px] font-abril">
                       Ziyarat{" "}
-                      <span className="md:text-[30px] font-normal">2025</span>
+                      <span className="text-[25px] md:text-[40px] font-normal">
+                        2025
+                      </span>
                     </p>
                     <p className="text-sm md:text-xl">
                       Offer Salutations And Greetings To Muhammad{" "}

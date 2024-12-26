@@ -40,7 +40,7 @@ const Blogs = () => {
           </p>
         </div>
         <div className="px-6 mt-4 mb-8 text-black md:mb-10 md:block">
-          <div className="flex flex-col items-center justify-center gap-y-2 gap-x-2 md:gap-y-2 md:flex-wrap md:flex-row">
+          <div className="flex flex-col items-center justify-center gap-y-2 gap-x-2 md:gap-y-2 md:shrink md:flex-row">
             {/* First Div */}
             <div className="flex flex-col items-start justify-center h-full overflow-hidden group precautions-opacity">
               <Link href="/blog1">
@@ -51,16 +51,16 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                </div>
-                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
-                  <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-lg font-normal text-white/90">
-                      17th August, 2021
-                    </span>
-                  </p>
-                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
-                    Guide For First Time Pilgrims Part 1
-                  </p>
+                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                    <p className="text-3xl text-[#B78738] font-abril">
+                      <span className="text-lg font-normal text-white/90">
+                        17th August, 2021
+                      </span>
+                    </p>
+                    <p className="mt-3 text-xl font-semibold  max-w-[300px]">
+                      Guide For First Time Pilgrims Part 1
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -74,16 +74,16 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                </div>
-                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
-                  <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-lg font-normal text-white/80">
-                      17th August, 2021
-                    </span>
-                  </p>
-                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
-                    Guide For First Time Pilgrims Part 2
-                  </p>
+                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                    <p className="text-3xl text-[#B78738] font-abril">
+                      <span className="text-lg font-normal text-white/80">
+                        17th August, 2021
+                      </span>
+                    </p>
+                    <p className="mt-3 text-xl font-semibold  max-w-[300px]">
+                      Guide For First Time Pilgrims Part 2
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -97,16 +97,16 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                </div>
-                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
-                  <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-lg font-normal text-white/80">
-                      17th August, 2021
-                    </span>
-                  </p>
-                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
-                    Guide For First Time Pilgrims Part 3
-                  </p>
+                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                    <p className="text-3xl text-[#B78738] font-abril">
+                      <span className="text-lg font-normal text-white/80">
+                        17th August, 2021
+                      </span>
+                    </p>
+                    <p className="mt-3 text-xl font-semibold  max-w-[300px]">
+                      Guide For First Time Pilgrims Part 3
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -120,16 +120,16 @@ const Blogs = () => {
                     className="h-[600px] w-[350px]"
                   />
                   <div className="absolute top-0 left-0 w-full h-full duration-500 bg-black opacity-35 group-hover:opacity-20"></div>
-                </div>
-                <div className="px-4 pb-4 mt-[-40%] relative z-30 text-white">
-                  <p className="text-3xl text-[#B78738] font-abril">
-                    <span className="text-lg font-normal text-white/80">
-                      17th August, 2021
-                    </span>
-                  </p>
-                  <p className="mt-3 text-xl font-semibold  max-w-[300px]">
-                    Guide For First Time Pilgrims Part 4
-                  </p>
+                  <div className="absolute bottom-0 z-30 px-4 pb-4 text-white">
+                    <p className="text-3xl text-[#B78738] font-abril">
+                      <span className="text-lg font-normal text-white/80">
+                        17th August, 2021
+                      </span>
+                    </p>
+                    <p className="mt-3 text-xl font-semibold  max-w-[300px]">
+                      Guide For First Time Pilgrims Part 4
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
