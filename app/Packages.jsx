@@ -48,7 +48,7 @@ const Packages = () => {
         </div>
         <div className="w-full h-full px-6 xl:px-24">
           <div className="flex justify-center w-full mt-4 text-black">
-            <div className="max-w-[2500] pack3-bg">
+            <div className="max-w-[2500] pack-bg">
               {/* FIRST */}
               <div className="flex flex-col items-center justify-center shrink md:flex-row">
                 <div className="flex flex-col items-start justify-end w-full  md:w-1/2 !h-[300px] md:!h-[400px] xl:!h-[500px] max-w-[1000px] fade-in">

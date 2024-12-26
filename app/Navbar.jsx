@@ -12,11 +12,13 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Modal from "./components/dialog";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => setIsOpen(false);
   const navItems = [
     { label: "About", href: "/about" },
     { label: "Hajj", href: "/hajj" },
@@ -125,7 +127,10 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <button className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white/80   hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] md:px-5 px-3 py-1">
+            <button
+              onClick={setIsOpen}
+              className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white/80   hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] md:px-5 px-3 py-1"
+            >
               Book Now
             </button>
 
@@ -161,6 +166,38 @@ export default function Navbar() {
           )}
         </div>
       </div>
+      <Modal isOpen={isOpen} onClose={closeModal}>
+        <div className="w-full overflow-hidden text-center text-black rounded-lg font-montserrat">
+          <p className="text-2xl font-bold">Book Now!</p>
+          <form className="w-full mt-4 mb-4">
+            <div className="flex flex-col gap-3 md:flex-row">
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+              <input
+                type="text"
+                placeholder="Email Address"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+              <input
+                type="text"
+                placeholder="Mobile Number"
+                className="w-full px-3 py-1 bg-transparent border border-gray-400 focus:outline-none focus:ring-0"
+              />
+            </div>
+            <textarea
+              type="text"
+              placeholder="Enter Your Message"
+              className="w-full px-3 py-1 mt-4 bg-transparent border border-gray-400 hide-scrollbar focus:outline-none focus:ring-0"
+            />
+            <button className="border-[#B78738] text-[#B78738] border font-medium md:text-xl px-5 py-1 mt-4">
+              Submit
+            </button>
+          </form>
+        </div>
+      </Modal>
     </nav>
   );
 }

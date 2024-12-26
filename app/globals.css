@@ -54,34 +54,7 @@ html {
 }
 
 .pack-bg {
-  background-image: url("/pack-bg1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto; /* Full viewport height */
-  position: relative;
-  background-attachment: fixed; /* Enables parallax scrolling */
-}
-.pack2-bg {
-  background-image: url("/test3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto; /* Full viewport height */
-  position: relative;
-  background-attachment: fixed; /* Enables parallax scrolling */
-}
-.pack3-bg {
-  background-image: url("/pack-bg3.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  height: auto; /* Full viewport height */
-  position: relative;
-  background-attachment: fixed; /* Enables parallax scrolling */
-}
-.pack4-bg {
-  background-image: url("/pack-bg4.jpg");
+  background-image: url("/pack-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,9 +77,6 @@ html {
     background-attachment: scroll;
   }
   .pack-bg {
-    background-attachment: scroll;
-  }
-  .pack3-bg {
     background-attachment: scroll;
   }
 }
