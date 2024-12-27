@@ -6,7 +6,6 @@ import {
   MailOpen,
   Map,
   PhoneOutgoing,
-  Youtube,
 } from "lucide-react";
 
 const ContactInfo = () => {
@@ -108,7 +107,7 @@ const ContactInfo = () => {
                     target="_blank"
                     href="https://www.youtube.com/channel/UC_1TAfW_CNhbkr5VCA1ypsQ"
                   >
-                    <Youtube className="w-8 h-8" />
+                    <img src="/youtube-black.svg" className="w-8 h-8" />
                   </a>
                   <a
                     href="https://www.instagram.com/accounts/login/?next=/yourtravelshop/"
