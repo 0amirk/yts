@@ -1,7 +1,7 @@
 const Awards = () => {
   return (
     <main>
-      <div className="flex justify-center w-full min-h-[400px] font-montserrat md:min-h-0 md:h-1/3 mb-10 ">
+      <div className="flex justify-center w-full min-h-[400px] mt-32 font-montserrat md:min-h-0 md:h-1/3 mb-12 md:mb-20 ">
         <div className="text-black text-sm md:text-[15px] bg-white  w-[70%] border-2 border-black/60">
           <div className="flex flex-col-reverse h-full shadow-lg bg-[#6F6F6F]/10 md:flex-row ">
             <div className=" md:w-[30%] p-4 md:h-full flex justify-center items-center">

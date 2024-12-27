@@ -8,7 +8,7 @@ export default function FloatingDockDemo() {
       title: "Home",
       icon: <House className="w-full h-full text-white/95" />,
       target: "",
-      href: "#",
+      href: "/",
     },
 
     {
