@@ -1,5 +1,4 @@
 "use client";
-import "@splidejs/react-splide/css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Modal from "./components/dialog";
@@ -32,7 +31,7 @@ const Packages = () => {
     <main className="flex justify-center w-full font-montserrat text-white/95">
       <div className="flex flex-col w-full bg-white">
         <div className="text-center flex flex-col items-center justify-start mt-8 md:mt-10 w-full px-4 py-6 text-[#B78738] ">
-          <p className="text-[25px] md:!text-[40px] text-[#B78738] font-abril  md:text-lg">
+          <p className="text-[25px] md:!text-[40px] text-[#B78738] font-abril">
             Explore options to visit the house of{" "}
             <span className=""> ﷻ ﷲ </span>
           </p>
@@ -130,7 +129,9 @@ const Packages = () => {
                     </p>
                     <button className="mt-1 md:text-lg group">
                       <Link href="/hajj">
-                        <p className="font-bold">Enquire Now</p>
+                        <p className="font-bold" id="ziyarat">
+                          Enquire Now
+                        </p>
                       </Link>
                     </button>
                   </div>

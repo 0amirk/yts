@@ -1,5 +1,5 @@
 "use client";
-
+import { useEffect } from "react";
 import {
   Facebook,
   Instagram,
@@ -9,9 +9,39 @@ import {
 } from "lucide-react";
 
 const ContactInfo = () => {
+  useEffect(() => {
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    const observerOptions = {
+      root: null, // Use the viewport
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    // Observe all the targeted elements
+    fadeIns.forEach((fadeIn) => {
+      observer.observe(fadeIn);
+
+      // Fallback check: add the show class if already visible
+      if (fadeIn.getBoundingClientRect().top < window.innerHeight) {
+        fadeIn.classList.add("show");
+      }
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main>
-      <div className="flex flex-col justify-center w-full my-12 font-montserrat md:flex-row">
+      <div className="flex flex-col justify-center w-full my-12 font-montserrat md:flex-row fade-in">
         <div className="w-[100%] md:max-w-[500px]  px-8">
           <div>
             <p className="text-[30px] md:text-[35px] font-abril text-[#B78738]">
