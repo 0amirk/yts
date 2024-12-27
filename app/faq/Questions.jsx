@@ -31,7 +31,7 @@ const AccordionItem = ({ header, ...rest }) => (
     className="border-b"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full p-2 text-left text-base md:text-lg hover:bg-gray-200/40 ${
+        `flex w-full p-2 text-left text-base md:text-lg ${
           isEnter && "bg-[#B78738]/30 hover:bg-[#B78738]/50"
         }`,
     }}
