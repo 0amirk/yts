@@ -1,8 +1,18 @@
 "use client";
 import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
-import Link from "next/link";
-import TimeArr from "./data";
 import { useState } from "react";
+import {
+  TimeArr,
+  ill,
+  Women,
+  General,
+  Hotels,
+  Ihram,
+  Payment,
+  Doc,
+  Res,
+} from "./data";
+
 const AccordionItem = ({ header, ...rest }) => (
   <Item
     {...rest}
@@ -10,10 +20,10 @@ const AccordionItem = ({ header, ...rest }) => (
       <>
         {header}
         <img
-          className={`ml-auto transition-transform duration-200 ease-out ${
-            isEnter && "rotate-180"
+          className={`ml-auto w-5 h-5 transition-transform duration-300 ease-out ${
+            isEnter && "rotate-[135deg]"
           }`}
-          src="/arrow.svg"
+          src="/plus.svg"
           alt="Chevron"
         />
       </>
@@ -21,10 +31,13 @@ const AccordionItem = ({ header, ...rest }) => (
     className="border-b"
     buttonProps={{
       className: ({ isEnter }) =>
-        `flex w-full p-2 text-left text-lg hover:bg-slate-100/40`,
+        `flex w-full p-2 text-left text-base md:text-lg hover:bg-gray-200/40 ${
+          isEnter && "bg-[#B78738]/30 hover:bg-[#B78738]/50"
+        }`,
     }}
     contentProps={{
-      className: "transition-height duration-200 ease-out",
+      className:
+        "transition-height text-sm md:text-base mb-2 bg-[#B78738]/30 duration-200 ease-out",
     }}
     panelProps={{ className: "p-2" }}
   />
@@ -32,6 +45,26 @@ const AccordionItem = ({ header, ...rest }) => (
 
 const Questions = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("Time and Travel");
+
+  // Tab categories
+  const tabsHajjUmrah = {
+    "Time and Travel": TimeArr,
+    "Women & Children": Women,
+    "Handicapped/Disabled/Ill": ill,
+    Hotels: Hotels,
+    Ihram: Ihram,
+    General: General,
+  };
+
+  const tabsCustomerCare = {
+    "Payment Information": Payment,
+    Documentation: Doc,
+    Reservation: Res,
+  };
+
+  const currentTabs = isOpen ? tabsCustomerCare : tabsHajjUmrah;
+
   return (
     <main className="w-full px-4 py-6 font-montserrat">
       <p className="text-center text-[25px] md:!text-[40px] text-[#B78738] font-abril">
@@ -39,60 +72,68 @@ const Questions = () => {
       </p>
       <div className="flex justify-center w-full mt-8">
         <div className="flex flex-col md:flex-row items-start gap-3 md:justify-between w-full max-w-[2000px]">
+          {/* Sidebar */}
           <div className="md:w-[20%] flex md:block gap-3">
             <p
-              onClick={() => setIsOpen(false)}
-              className={`px-3 py-2 md:py-3  ${
-                isOpen
-                  ? "bg-gray-200/50 hover:bg-gray-200/70"
-                  : "bg-[#B78738]/80"
-              } cursor-pointer  transition-all ease-in-out duration-500 md:text-xl max-w-[200px] md:max-w-[300px] text-center`}
+              onClick={() => {
+                setIsOpen(false);
+                setActiveTab("Time and Travel");
+              }}
+              className={`px-3 py-2 md:py-3 ${
+                !isOpen
+                  ? "bg-[#B78738] text-white"
+                  : "bg-gray-200/50 hover:bg-gray-200/70"
+              } cursor-pointer transition-all ease-in-out duration-500 md:text-xl max-w-[200px] md:max-w-[300px] text-center`}
             >
               Hajj & Umrah
             </p>
             <p
-              onClick={() => setIsOpen(true)}
+              onClick={() => {
+                setIsOpen(true);
+                setActiveTab("Payment Information");
+              }}
               className={`px-3 py-2 md:mt-4 md:py-3 ${
                 isOpen
-                  ? " bg-[#B78738]/80"
+                  ? "bg-[#B78738] text-white"
                   : "bg-gray-200/50 hover:bg-gray-200/70"
-              }  cursor-pointer  transition-all ease-in-out duration-500 md:text-xl max-w-[200px] md:max-w-[300px] text-center`}
+              } cursor-pointer transition-all ease-in-out duration-500 md:text-xl max-w-[200px] md:max-w-[300px] text-center`}
             >
               Customer Care
             </p>
           </div>
-          <div className=" w-full md:w-[80%]">
-            <div className={`${isOpen ? "hidden" : "block"}`}>
-              {/* <div className="flex flex-wrap gap-4 mb-4 text-lg">
-                <a>Time And Travel</a>
-                <a>Women And Children</a>
-                <a>Handicapped/Disabled/Ill</a>
-                <a>Hotels</a>
-                <a>Ihram</a>
-                <a>General</a>
-              </div> */}
-              <p className="text-xl border-b-[2px] border-[#B78738]">
-                Time And Travel
-              </p>
-              <div className="px-2">
-                {TimeArr.map((item, index) => (
-                  <Accordion transition transitionTimeout={200} key={index}>
-                    <AccordionItem header={item.q}>{item.a}</AccordionItem>
-                  </Accordion>
-                ))}
-              </div>
+
+          {/* Content */}
+          <div className="w-full md:w-[80%]">
+            {/* Tabs */}
+            <div>
+              {Object.keys(currentTabs).map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-4 py-2 text-sm md:text-lg font-semibold transition-all duration-300 ${
+                    activeTab === tab
+                      ? "text-[#B78738] border-b-2 border-[#B78738]"
+                      : "text-gray-600 border-b-2 border-transparent hover:text-[#B78738] hover:border-gray-400"
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
             </div>
-            <Accordion
-              transition
-              transitionTimeout={200}
-              className={`${isOpen ? "block" : "hidden"}`}
-            >
-              <AccordionItem header="ACC">TEST</AccordionItem>
-            </Accordion>
+
+            {/* Accordion */}
+            <div className="mt-4">
+              {currentTabs[activeTab].map((item, index) => (
+                <Accordion transition transitionTimeout={200} key={index}>
+                  <AccordionItem header={item.q}>{item.a}</AccordionItem>
+                </Accordion>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </main>
   );
 };
+
 export default Questions;
