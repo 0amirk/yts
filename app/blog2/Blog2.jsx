@@ -1,11 +1,11 @@
 const Blog2 = () => {
   return (
-    <main className="px-2 py-6 mt-8 mb-10 md:mt-10">
+    <main className="px-4 py-6 mt-8 mb-10 md:mt-10">
       <p className="font-abril text-center text-[38px] sm:text-[45px] md:text-[50px] text-[#B78738]">
         Guide For First Time Pilgrims Part 2
       </p>
       <div className="flex justify-center mt-4 font-montserrat">
-        <div className="max-w-[2000px] px-6 md:px-24">
+        <div className="max-w-[2000px] md:px-24">
           <p>
             <br />
             <strong>Seek forgiveness before your pilgrimage </strong>
