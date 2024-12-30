@@ -22,6 +22,7 @@ export default function Navbar() {
     { label: "About", href: "/about" },
     { label: "Hajj", href: "/hajj" },
     { label: "Umrah", href: "/umrah" },
+    { label: "Ramadan", href: "/ramadan" },
     { label: "Ziyarat", href: "/#ziyarat" },
     { label: "FAQ", href: "/faq" },
     { label: "Contact Us", href: "/contact" },

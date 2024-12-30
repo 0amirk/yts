@@ -5,7 +5,9 @@ const AboutHero = () => {
     <main>
       <FloatingDockDemo />
       <div className="AboutHero w-full relative z-10 mt-16 !h-[45vh] flex justify-center items-center  text-white/95">
-        <p className="font-bold text-7xl font-abril">About Us</p>
+        <p className="text-[38px] sm:text-[45px] md:text-[50px] font-abril text-white">
+          Trust Us To Guide You On A Journey Of Faith
+        </p>
       </div>
     </main>
   );

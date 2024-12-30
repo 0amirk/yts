@@ -8,15 +8,19 @@ import Catalyst from "../Catalyst";
 import Awards from "../Awards";
 import Footer from "../Footer";
 import Accred from "../Accred";
+import AboutTxt from "./AboutTxt";
+import AboutChoose from "./AboutChoose";
+import Testimonials from "./Testimonials";
 
 export default function About() {
   return (
     <>
       <Navbar />
       <AboutHero />
-      <Journey />
-      <ChooseUs />
+      <AboutTxt />
+      <AboutChoose />
       <Awards />
+      <Testimonials />
       <Catalyst />
       <Accred />
       <Footer />

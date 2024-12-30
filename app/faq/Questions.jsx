@@ -23,8 +23,8 @@ const AccordionItem = ({ header, ...rest }) => (
           className={`ml-auto w-5 h-5 transition-transform duration-300 ease-out ${
             isEnter && "rotate-[135deg]"
           }`}
-          src="/plus.svg"
-          alt="Chevron"
+          src="/faq/plus.svg"
+          alt="plus"
         />
       </>
     )}
@@ -51,7 +51,7 @@ const Questions = () => {
   const tabsHajjUmrah = {
     "Time and Travel": TimeArr,
     "Women & Children": Women,
-    "Handicapped/Disabled/Ill": ill,
+    "Handicapped/Disabled/ill": ill,
     Hotels: Hotels,
     Ihram: Ihram,
     General: General,
