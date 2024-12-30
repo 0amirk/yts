@@ -1,6 +1,6 @@
 const Blog1 = () => {
   return (
-    <main className="px-4 py-6 mt-8 mb-10 md:mt-10">
+    <main className="px-2 py-6 mt-8 mb-10 md:mt-10">
       <p className="font-abril text-center text-[38px] sm:text-[45px] md:text-[50px] text-[#B78738]">
         Guide For First Time Pilgrims Part 1
       </p>
