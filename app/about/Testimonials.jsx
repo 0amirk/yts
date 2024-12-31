@@ -42,7 +42,7 @@ const Testimonials = () => {
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm">
               <img
-                src="/about/testimonial.jpg"
+                src="/AboutUs/testimonial.jpg"
                 className="rounded-full w-14 h-14"
               />
               <p className="text-lg text-black/60">Mohammed Ozair</p>
@@ -58,7 +58,7 @@ const Testimonials = () => {
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm">
               <img
-                src="/about/testimonial.jpg"
+                src="/AboutUs/testimonial.jpg"
                 className="rounded-full w-14 h-14"
               />
               <p className="text-lg text-black/60">Mohammed Ozair</p>

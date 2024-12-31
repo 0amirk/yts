@@ -132,7 +132,7 @@ export default function Navbar() {
             </div>
             <button
               onClick={setIsOpen}
-              className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white/80   hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] md:px-5 px-3 py-1"
+              className="border-[#FFFFFF] text-[#FFFFFF] border hover:text-black hover:bg-white  hover:opacity-95 font-medium md:text-xl ease-in-out transition-all duration-500 hover:scale-[103%] md:px-5 px-3 py-1"
             >
               Book Now
             </button>
