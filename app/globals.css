@@ -24,7 +24,7 @@ html {
 }
 
 .AboutHero {
-  background-image: url("/AboutUs/test2.jpg");
+  background-image: url("/AboutUs/aboutHero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

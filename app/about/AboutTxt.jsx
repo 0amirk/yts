@@ -1,15 +1,24 @@
+"use client";
+import { useState } from "react";
+import { Play } from "lucide-react";
+import Modal from "../components/dialog";
 const AboutTxt = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => setIsOpen(false);
   return (
     <main className="flex flex-col-reverse justify-center w-full gap-12 px-4 py-6 mt-8 md:mt-10 md:flex-row">
-      <div className="md:w-[1000px] w-full">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
-          title="Why Choose Us"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="w-[100%] h-full aspect-video"
-        ></iframe>
+      <div className="md:w-[1000px] relative w-full">
+        <div
+          className="absolute flex items-center justify-center w-full h-full cursor-pointer"
+          onClick={() => setIsOpen(true)}
+        >
+          <Play className="absolute z-30 w-14 h-14 stroke-white animate-play" />
+        </div>
+
+        <div className="absolute z-20 flex items-end justify-center w-full h-full pb-12 bg-black/20">
+          <p className="text-5xl text-white font-abril">Discover Your Roots</p>
+        </div>
+        <img src="/AboutUs/test.jpg" className="w-full h-full" />
       </div>
       <div className="md:w-[1000px] font-montserrat">
         <p className="font-abril leading-none  text-[38px] sm:text-[45px] md:text-[50px] text-[#B78738]">
@@ -36,6 +45,31 @@ const AboutTxt = () => {
           achieve a life-changing experience, grounded in faith and trust.
         </p>
       </div>
+      <Modal isOpen={isOpen} onClose={closeModal}>
+        <div className="hidden overflow-hidden rounded-lg md:block">
+          <iframe
+            width="700"
+            height="512"
+            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
+            title="Why Choose Us"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className=""
+          ></iframe>
+        </div>
+        <div className="overflow-hidden rounded-lg md:hidden">
+          <iframe
+            width="350"
+            height="300"
+            src="https://www.youtube-nocookie.com/embed/waRrwCyuGa0?si=RohBSYmUZqrr3E7Y"
+            title="Why Choose Us"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Modal>
     </main>
   );
 };
