@@ -13,15 +13,10 @@ const Blog1 = () => {
           </p>
 
           <ul className="list-disc list-inside">
-            <li>
-              &nbsp;&nbsp; &nbsp;Remove unwanted hair, clip nails, trim
-              moustache etc
-            </li>
-            <li>&nbsp;&nbsp; &nbsp;Make Ghusl (if possible) or make Wudhu</li>
-            <li>
-              &nbsp;&nbsp; &nbsp;Wear Ihram prior to arriving at the Meeqat
-            </li>
-            <li>&nbsp;&nbsp; &nbsp;Pray 2 raka&#39;at (optional)</li>
+            <li>Remove unwanted hair, clip nails, trim moustache etc</li>
+            <li>Make Ghusl (if possible) or make Wudhu</li>
+            <li>Wear Ihram prior to arriving at the Meeqat</li>
+            <li>Pray 2 raka&#39;at (optional)</li>
           </ul>
 
           <p>

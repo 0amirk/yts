@@ -41,7 +41,10 @@ const Testimonials = () => {
               I pray to Allah for their well being.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm">
-              <img src="/about/test.jpg" className="rounded-full w-14 h-14" />
+              <img
+                src="/about/testimonial.jpg"
+                className="rounded-full w-14 h-14"
+              />
               <p className="text-lg text-black/60">Mohammed Ozair</p>
             </div>
           </div>
@@ -54,7 +57,10 @@ const Testimonials = () => {
               I pray to Allah for their well being.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm">
-              <img src="/about/test.jpg" className="rounded-full w-14 h-14" />
+              <img
+                src="/about/testimonial.jpg"
+                className="rounded-full w-14 h-14"
+              />
               <p className="text-lg text-black/60">Mohammed Ozair</p>
             </div>
           </div>
@@ -67,7 +73,10 @@ const Testimonials = () => {
               I pray to Allah for their well being.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm">
-              <img src="/about/test.jpg" className="rounded-full w-14 h-14" />
+              <img
+                src="/AboutUs/testimonial.jpg"
+                className="rounded-full w-14 h-14"
+              />
               <p className="text-lg text-black/60">Mohammed Ozair</p>
             </div>
           </div>
