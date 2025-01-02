@@ -12,14 +12,16 @@ const AboutTxt = () => {
           className="absolute flex items-center justify-center w-full h-full cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
-          <Play className="absolute z-30 w-14 h-14 stroke-white animate-play" />
+          <Play className="absolute z-30 w-10 h-10 mb-12 md:mb-0 md:w-14 md:h-14 stroke-white animate-play" />
         </div>
 
         <div
           className="absolute z-20 flex items-end justify-center w-full h-full pb-12 cursor-pointer bg-black/20"
           onClick={() => setIsOpen(true)}
         >
-          <p className="text-5xl text-white font-abril">Discover Your Roots</p>
+          <p className="text-3xl text-white md:text-5xl font-abril">
+            Discover Your Roots
+          </p>
         </div>
         <img src="/AboutUs/test.jpg" className="w-full h-full" />
       </div>
