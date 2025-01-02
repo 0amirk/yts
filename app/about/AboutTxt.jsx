@@ -7,7 +7,7 @@ const AboutTxt = () => {
   const closeModal = () => setIsOpen(false);
   return (
     <main className="flex flex-col-reverse justify-center w-full gap-12 px-4 py-6 mt-8 md:mt-10 md:flex-row">
-      <div className="md:w-[1000px] relative w-full">
+      <div className="md:w-[1000px] relative w-full ">
         <div
           className="absolute flex items-center justify-center w-full h-full cursor-pointer"
           onClick={() => setIsOpen(true)}
@@ -15,7 +15,10 @@ const AboutTxt = () => {
           <Play className="absolute z-30 w-14 h-14 stroke-white animate-play" />
         </div>
 
-        <div className="absolute z-20 flex items-end justify-center w-full h-full pb-12 bg-black/20">
+        <div
+          className="absolute z-20 flex items-end justify-center w-full h-full pb-12 cursor-pointer bg-black/20"
+          onClick={() => setIsOpen(true)}
+        >
           <p className="text-5xl text-white font-abril">Discover Your Roots</p>
         </div>
         <img src="/AboutUs/test.jpg" className="w-full h-full" />
